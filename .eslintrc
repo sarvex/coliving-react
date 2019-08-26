@@ -1,0 +1,28 @@
+---
+env:
+  browser: true
+  es6: true
+  node: true
+extends:
+- react-app
+- airbnb
+- prettier
+- prettier/react
+- plugin:prettier/recommended
+- eslint-config-prettier
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+- react
+- prettier
+rules: {}
+settings:
+  import/parser: babel-eslint
+  import/resolver:
+    eslint-import-resolver-babel-module: {}
