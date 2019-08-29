@@ -1,4 +1,4 @@
-import { mrAuto, mlAuto, title, description, cardTitle, grayColor } from 'assets/jss/material-kit-pro-react.jsx';
+import { mrAuto, mlAuto, title, description, cardTitle, grayColor } from '../../../material-kit-pro-react';
 
 const teamStyle = {
   mrAuto,

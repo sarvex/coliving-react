@@ -56,11 +56,6 @@ class Components extends React.Component {
     });
   }
 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
-
   render() {
     const { classes, ...rest } = this.props;
     return (

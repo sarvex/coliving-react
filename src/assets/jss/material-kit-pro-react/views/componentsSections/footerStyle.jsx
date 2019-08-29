@@ -8,9 +8,9 @@ import {
   dribbbleColor,
   instagramColor,
   grayColor,
-} from 'assets/jss/material-kit-pro-react.jsx';
+} from '../../../material-kit-pro-react';
 
-import imagesStyles from 'assets/jss/material-kit-pro-react/imagesStyles.jsx';
+import imagesStyles from '../../imagesStyles';
 
 const style = {
   ...imagesStyles,

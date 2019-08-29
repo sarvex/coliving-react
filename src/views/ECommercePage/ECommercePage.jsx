@@ -37,11 +37,6 @@ import face8 from 'assets/img/faces/card-profile2-square.jpg';
 import styles from 'assets/jss/material-kit-pro-react/views/ecommerceStyle';
 
 class EcommercePage extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
-
   render() {
     const { classes } = this.props;
     return (

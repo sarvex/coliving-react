@@ -1,6 +1,6 @@
-import { grayColor, container, title } from 'assets/jss/material-kit-pro-react.jsx';
+import { grayColor, container, title } from '../../../material-kit-pro-react';
 
-import imagesStyles from 'assets/jss/material-kit-pro-react/imagesStyles.jsx';
+import imagesStyles from '../../imagesStyles';
 
 const sectionTextStyle = {
   container,

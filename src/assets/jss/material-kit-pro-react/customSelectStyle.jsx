@@ -1,11 +1,4 @@
-import {
-  primaryColor,
-  primaryBoxShadow,
-  blackColor,
-  whiteColor,
-  grayColor,
-  hexToRgb,
-} from 'assets/jss/material-kit-pro-react.jsx';
+import { primaryColor, primaryBoxShadow, blackColor, whiteColor, grayColor, hexToRgb } from '../material-kit-pro-react';
 
 const customSelectStyle = {
   select: {

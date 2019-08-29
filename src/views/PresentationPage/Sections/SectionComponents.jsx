@@ -1,11 +1,8 @@
 import React from 'react';
-// core components
-import GridContainer from 'components/Grid/GridContainer.jsx';
-import GridItem from 'components/Grid/GridItem.jsx';
-// @material-ui/core components
+import GridContainer from 'components/Grid/GridContainer';
 import withStyles from '@material-ui/core/styles/withStyles';
 
-import componentsStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/componentsStyle.jsx';
+import componentsStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/componentsStyle';
 
 import macbookImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/laptop-basics.png';
 import shoppingCartImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/table.jpg';
@@ -14,6 +11,7 @@ import cardImage from 'assets/img/assets-for-demo/presentationViewSectionCompone
 import twitterImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg';
 import iconsImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg';
 import repostImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg';
+import GridItem from '../../../components/Grid/GridItem';
 
 class SectionComponents extends React.Component {
   render() {

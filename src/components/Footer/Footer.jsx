@@ -2,15 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import Favorite from '@material-ui/icons/Favorite';
 
-import footerStyle from 'assets/jss/material-kit-pro-react/components/footerStyle.jsx';
+import footerStyle from 'assets/jss/material-kit-pro-react/components/footerStyle';
 
 function Footer(props) {
   const { children, content, classes, theme, big, className } = props;
-  const themeType = !(theme === 'transparent' || theme == undefined);
+  const themeType = !(theme === 'transparent' || theme === undefined);
   const footerClasses = classNames({
     [classes.footer]: true,
     [classes[theme]]: themeType,

@@ -4,9 +4,7 @@ import './App.scss';
 import 'assets/scss/material-kit-pro-react.scss';
 
 const App = () => {
-  return (
-    <Router />
-  );
+  return <Router />;
 };
 
 export default App;

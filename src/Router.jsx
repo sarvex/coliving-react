@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Blog from 'views/BlogPostPage/BlogPostPage';
 import Posts from 'views/BlogPostsPage/BlogPostsPage';
 import Components from 'views/ComponentsPage/ComponentsPage';
-import Contact from 'views/ContactUsPage/ContactUsPage';
+import ContactUs from 'views/ContactUsPage/ContactUsPage';
 import ECommerce from 'views/ECommercePage/ECommercePage';
 import Landing from 'views/LandingPage/LandingPage';
 import Login from 'views/LoginPage/LoginPage';
@@ -19,6 +19,12 @@ import SignUp from 'views/SignupPage/SignupPage';
 import Error from 'views/ErrorPage/ErrorPage';
 import About from 'views/AboutUsPage/AboutUsPage';
 
+import Home from 'pages/home/Home';
+import Intelligent from 'pages/intelligent/Intelligent';
+import Smart from 'pages/smart/Smart';
+import Butler from 'pages/butler/Butler';
+import Contact from 'pages/contact/Contact';
+
 const history = createBrowserHistory();
 
 const AppRouter = () => (
@@ -28,7 +34,7 @@ const AppRouter = () => (
       <Route path='/blog' component={Blog} />
       <Route path='/posts' component={Posts} />
       <Route path='/components' component={Components} />
-      <Route path='/contact' component={Contact} />
+      <Route path='/contact-us' component={ContactUs} />
       <Route path='/ecommerce' component={ECommerce} />
       <Route path='/landing' component={Landing} />
       <Route path='/login' component={Login} />
@@ -39,7 +45,11 @@ const AppRouter = () => (
       <Route path='/cart' component={Cart} />
       <Route path='/signup' component={SignUp} />
       <Route path='/error' component={Error} />
-      <Route path='/' component={Presentation} />
+      <Route path='/intelligent' component={Intelligent} />
+      <Route path='/smart' component={Smart} />
+      <Route path='/butler' component={Butler} />
+      <Route path='/contact' component={Contact} />
+      <Route path='/' exact component={Home} />
     </Switch>
   </Router>
 );

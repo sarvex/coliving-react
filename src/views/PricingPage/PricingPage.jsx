@@ -21,11 +21,6 @@ import SectionFeatures from 'views/PricingPage/Sections/SectionFeatures';
 import pricingStyle from 'assets/jss/material-kit-pro-react/views/pricingStyle';
 
 class PricingPage extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
-
   render() {
     const { classes } = this.props;
     return (

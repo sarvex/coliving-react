@@ -1,4 +1,4 @@
-import { container, title, main, whiteColor, mainRaised } from 'assets/jss/material-kit-pro-react.jsx';
+import { container, title, main, whiteColor, mainRaised } from '../../material-kit-pro-react';
 
 const landingPageStyle = {
   container: {

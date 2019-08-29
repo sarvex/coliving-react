@@ -91,11 +91,6 @@ const CustomSkinMap = withScriptjs(
 );
 
 class ContactUsPage extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
-
   render() {
     const { classes } = this.props;
     return (

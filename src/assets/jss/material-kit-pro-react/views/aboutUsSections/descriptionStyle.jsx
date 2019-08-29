@@ -1,4 +1,4 @@
-import { container, mrAuto, mlAuto, description } from 'assets/jss/material-kit-pro-react.jsx';
+import { container, mrAuto, mlAuto, description } from '../../../material-kit-pro-react';
 
 const descriptionStyle = {
   container,

@@ -1,18 +1,15 @@
 import React from 'react';
 
-// core components
-import GridContainer from 'components/Grid/GridContainer.jsx';
-import GridItem from 'components/Grid/GridItem.jsx';
-import InfoArea from 'components/InfoArea/InfoArea.jsx';
+import GridContainer from 'components/Grid/GridContainer';
+import GridItem from 'components/Grid/GridItem';
+import InfoArea from 'components/InfoArea/InfoArea';
 
-// @material-ui icons
 import Apps from '@material-ui/icons/Apps';
 import ViewDay from '@material-ui/icons/ViewDay';
 import ViewCarousel from '@material-ui/icons/ViewCarousel';
-// @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles';
 
-import descriptionStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/descriptionStyle.jsx';
+import descriptionStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/descriptionStyle';
 
 class SectionDescription extends React.Component {
   render() {

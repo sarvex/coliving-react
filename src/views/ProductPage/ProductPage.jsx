@@ -52,11 +52,6 @@ class ProductPage extends React.Component {
     };
   }
 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
-
   handleSelect = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   };

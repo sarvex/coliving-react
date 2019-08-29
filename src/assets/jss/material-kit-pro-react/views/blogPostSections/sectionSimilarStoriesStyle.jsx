@@ -1,4 +1,4 @@
-import { container, title, cardTitle, grayColor, coloredShadow } from 'assets/jss/material-kit-pro-react.jsx';
+import { container, title, cardTitle, grayColor, coloredShadow } from '../../../material-kit-pro-react';
 
 const sectionSimilarStoriesStyle = {
   container,

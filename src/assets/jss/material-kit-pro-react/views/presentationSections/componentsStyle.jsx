@@ -1,4 +1,4 @@
-import { container, title, mlAuto, blackColor, grayColor, hexToRgb } from 'assets/jss/material-kit-pro-react.jsx';
+import { container, title, mlAuto, blackColor, grayColor, hexToRgb } from '../../../material-kit-pro-react';
 
 const reusableStylesForImgs = {
   position: 'absolute',

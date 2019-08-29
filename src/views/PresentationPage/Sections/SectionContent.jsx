@@ -1,15 +1,11 @@
 import React from 'react';
-// core components
-import GridContainer from 'components/Grid/GridContainer.jsx';
-import GridItem from 'components/Grid/GridItem.jsx';
-// @material-ui/core components
+import GridContainer from 'components/Grid/GridContainer';
+import GridItem from 'components/Grid/GridItem';
 import withStyles from '@material-ui/core/styles/withStyles';
-// library used for cool animations
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
-import contentStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/contentStyle.jsx';
-// images
+import contentStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/contentStyle';
 import presentationiPad from 'assets/img/assets-for-demo/presentationViewSectionComponent/presentation-ipad.jpg';
 import presentationiPadComments from 'assets/img/assets-for-demo/presentationViewSectionComponent/ipad-comments.jpg';
 import presentationiPadTable from 'assets/img/assets-for-demo/presentationViewSectionComponent/ipad-table.jpg';

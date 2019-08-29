@@ -8,11 +8,11 @@ import {
   whiteColor,
   mainRaised,
   grayColor,
-} from 'assets/jss/material-kit-pro-react.jsx';
+} from '../../material-kit-pro-react';
 
-import imagesStyle from 'assets/jss/material-kit-pro-react/imagesStyles.jsx';
+import imagesStyle from '../imagesStyles';
 
-import tooltipsStyle from 'assets/jss/material-kit-pro-react/tooltipsStyle.jsx';
+import tooltipsStyle from '../tooltipsStyle';
 
 const profilePageStyle = {
   container,

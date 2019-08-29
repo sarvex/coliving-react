@@ -9,7 +9,7 @@ import {
   whiteColor,
   sectionDark,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react.jsx';
+} from 'assets/jss/material-kit-pro-react';
 
 const projectsSection = {
   container,

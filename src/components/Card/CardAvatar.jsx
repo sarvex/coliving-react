@@ -8,7 +8,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 // @material-ui/icons
 // core components
 
-import cardAvatarStyle from 'assets/jss/material-kit-pro-react/components/cardAvatarStyle.jsx';
+import cardAvatarStyle from 'assets/jss/material-kit-pro-react/components/cardAvatarStyle';
 
 function CardAvatar({ ...props }) {
   const { classes, children, className, plain, profile, testimonial, testimonialFooter, ...rest } = props;

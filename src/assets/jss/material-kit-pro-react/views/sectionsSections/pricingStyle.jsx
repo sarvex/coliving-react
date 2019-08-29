@@ -12,7 +12,7 @@ import {
   whiteColor,
   grayColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react.jsx';
+} from 'assets/jss/material-kit-pro-react';
 
 const pricingSection = {
   container,

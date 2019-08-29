@@ -8,7 +8,7 @@ import {
   dangerColor,
   successColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react.jsx';
+} from '../material-kit-pro-react';
 
 const style = {
   rotatingCardContainer: {

@@ -39,11 +39,6 @@ import cardProfile2Square from 'assets/img/faces/card-profile2-square.jpg';
 import profilePageStyle from 'assets/jss/material-kit-pro-react/views/profilePageStyle';
 
 class ProfilePage extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
-
   render() {
     const { classes, ...rest } = this.props;
     const imageClasses = classNames(classes.imgRaised, classes.imgRoundedCircle, classes.imgFluid);

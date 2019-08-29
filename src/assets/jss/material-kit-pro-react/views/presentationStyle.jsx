@@ -1,13 +1,5 @@
-import {
-  container,
-  title,
-  main,
-  whiteColor,
-  grayColor,
-  mainRaised,
-  hexToRgb,
-} from 'assets/jss/material-kit-pro-react.jsx';
-import footerStyle from 'assets/jss/material-kit-pro-react/views/componentsSections/footerStyle.jsx';
+import { container, title, main, whiteColor, grayColor, mainRaised, hexToRgb } from '../../material-kit-pro-react';
+import footerStyle from './componentsSections/footerStyle';
 
 const presentationStyle = {
   ...footerStyle,

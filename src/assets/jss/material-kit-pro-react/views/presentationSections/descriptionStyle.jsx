@@ -1,4 +1,4 @@
-import { container, section, grayColor } from 'assets/jss/material-kit-pro-react.jsx';
+import { container, section, grayColor } from 'assets/jss/material-kit-pro-react';
 
 const descriptionStyle = {
   container,

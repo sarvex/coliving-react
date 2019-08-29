@@ -10,11 +10,10 @@ import {
   roseColor,
   grayColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react.jsx';
+} from '../../../material-kit-pro-react';
 
-import imageStyles from 'assets/jss/material-kit-pro-react/imagesStyles.jsx';
-
-import rotatingCards from 'assets/jss/material-kit-pro-react/rotatingCards.jsx';
+import imageStyles from '../../imagesStyles';
+import rotatingCards from '../../rotatingCards';
 
 const styles = {
   container,

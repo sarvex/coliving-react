@@ -1,4 +1,4 @@
-import { title, whiteColor, blackColor, hexToRgb } from 'assets/jss/material-kit-pro-react.jsx';
+import { title, whiteColor, blackColor, hexToRgb } from '../../material-kit-pro-react';
 
 const errorPageStyles = {
   contentCenter: {

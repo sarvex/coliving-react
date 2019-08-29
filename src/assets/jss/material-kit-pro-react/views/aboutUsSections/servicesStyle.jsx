@@ -1,4 +1,4 @@
-import { title, description, mrAuto, mlAuto } from 'assets/jss/material-kit-pro-react.jsx';
+import { title, description, mrAuto, mlAuto } from '../../../material-kit-pro-react';
 
 const servicesStyle = {
   title,

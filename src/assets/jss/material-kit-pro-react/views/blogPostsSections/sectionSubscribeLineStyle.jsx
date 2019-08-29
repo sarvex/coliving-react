@@ -1,4 +1,4 @@
-import { container, title, description, grayColor } from 'assets/jss/material-kit-pro-react.jsx';
+import { container, title, description, grayColor } from '../../../material-kit-pro-react';
 
 const sectionSubscribeLineStyle = {
   container,

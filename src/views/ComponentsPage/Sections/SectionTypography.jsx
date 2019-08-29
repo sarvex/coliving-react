@@ -20,7 +20,7 @@ import Quote from 'components/Typography/Quote';
 import typographyStyle from 'assets/jss/material-kit-pro-react/views/componentsSections/typographyStyle';
 
 import image from 'assets/img/faces/avatar.jpg';
-import SectionContentAreas from './SectionContentAreas.jsx';
+import SectionContentAreas from './SectionContentAreas';
 
 class SectionTypography extends React.Component {
   render() {

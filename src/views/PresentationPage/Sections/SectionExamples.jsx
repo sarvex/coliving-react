@@ -1,17 +1,13 @@
 import React from 'react';
-// nodejs library that concatenates classes
 import classNames from 'classnames';
-// react components for routing our app without refresh
 import { Link } from 'react-router-dom';
-// core components
-import GridContainer from 'components/Grid/GridContainer.jsx';
-import GridItem from 'components/Grid/GridItem.jsx';
-import Card from 'components/Card/Card.jsx';
-// @material-ui/core components
+import GridContainer from 'components/Grid/GridContainer';
+import GridItem from 'components/Grid/GridItem';
+import Card from 'components/Card/Card';
 import withStyles from '@material-ui/core/styles/withStyles';
 
-import examplesStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/examplesStyle.jsx';
-import imagesStyles from 'assets/jss/material-kit-pro-react/imagesStyles.jsx';
+import examplesStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/examplesStyle';
+import imagesStyles from 'assets/jss/material-kit-pro-react/imagesStyles';
 
 import exAboutUs from 'assets/img/assets-for-demo/example-pages/ex-about-us.jpg';
 import exLanding from 'assets/img/assets-for-demo/example-pages/ex-landing.jpg';

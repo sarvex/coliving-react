@@ -1,4 +1,4 @@
-import { container, title } from 'assets/jss/material-kit-pro-react.jsx';
+import { container, title } from '../../../material-kit-pro-react';
 
 const pillsStyle = {
   section: {

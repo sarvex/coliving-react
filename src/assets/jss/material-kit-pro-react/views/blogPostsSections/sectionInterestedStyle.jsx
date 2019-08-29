@@ -1,4 +1,4 @@
-import { title, cardTitle, coloredShadow, grayColor } from 'assets/jss/material-kit-pro-react.jsx';
+import { title, cardTitle, coloredShadow, grayColor } from '../../../material-kit-pro-react';
 
 const sectionInterestedStyle = {
   title,
