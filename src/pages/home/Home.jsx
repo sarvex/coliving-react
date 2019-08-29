@@ -20,11 +20,10 @@ import SectionFreeDemo from 'views/PresentationPage/Sections/SectionFreeDemo';
 import SectionOverview from 'views/PresentationPage/Sections/SectionOverview';
 import SectionPricing from 'views/PresentationPage/Sections/SectionPricing';
 
-import Header from './sections/Header';
-
 import presentationStyle from 'assets/jss/material-kit-pro-react/views/presentationStyle';
 
 import background from 'assets/img/bg4.jpg';
+import Header from './sections/Header';
 
 const Home = (props) => {
   const { classes } = props;

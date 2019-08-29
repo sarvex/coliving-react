@@ -8,17 +8,16 @@ import Components from 'views/ComponentsPage/ComponentsPage';
 import ContactUs from 'views/ContactUsPage/ContactUsPage';
 import ECommerce from 'views/ECommercePage/ECommercePage';
 import Landing from 'views/LandingPage/LandingPage';
-import Login from 'views/LoginPage/LoginPage';
-import Presentation from 'views/PresentationPage/PresentationPage';
 import Pricing from 'views/PricingPage/PricingPage';
-import Profile from 'views/ProfilePage/ProfilePage';
 import Product from 'views/ProductPage/ProductPage';
 import Sections from 'views/SectionsPage/SectionsPage';
 import Cart from 'views/ShoppingCartPage/ShoppingCartPage';
-import SignUp from 'views/SignupPage/SignupPage';
-import Error from 'views/ErrorPage/ErrorPage';
 import About from 'views/AboutUsPage/AboutUsPage';
 
+import Error from 'pages/error/Error';
+import Login from 'pages/login/Login';
+import Profile from 'pages/profile/Profile';
+import SignUp from 'pages/signup/Signup';
 import Home from 'pages/home/Home';
 import Intelligent from 'pages/intelligent/Intelligent';
 import Smart from 'pages/smart/Smart';
@@ -30,19 +29,19 @@ const history = createBrowserHistory();
 const AppRouter = () => (
   <Router history={history}>
     <Switch>
-      <Route path='/about' component={About} />
+      {/* <Route path='/about' component={About} />
       <Route path='/blog' component={Blog} />
       <Route path='/posts' component={Posts} />
       <Route path='/components' component={Components} />
       <Route path='/contact-us' component={ContactUs} />
       <Route path='/ecommerce' component={ECommerce} />
       <Route path='/landing' component={Landing} />
-      <Route path='/login' component={Login} />
       <Route path='/pricing' component={Pricing} />
-      <Route path='/profile' component={Profile} />
       <Route path='/product' component={Product} />
       <Route path='/sections' component={Sections} />
-      <Route path='/cart' component={Cart} />
+      <Route path='/cart' component={Cart} /> */}
+      <Route path='/login' component={Login} />
+      <Route path='/profile' component={Profile} />
       <Route path='/signup' component={SignUp} />
       <Route path='/error' component={Error} />
       <Route path='/intelligent' component={Intelligent} />
