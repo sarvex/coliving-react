@@ -1,8 +1,8 @@
-import { title, mrAuto, mlAuto, grayColor } from 'assets/jss/material-kit-pro-react.jsx';
+import { title, mrAuto, mlAuto, grayColor } from '../../../material-kit-pro-react';
 
-import checkboxes from 'assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.jsx';
-import buttonGroup from 'assets/jss/material-kit-pro-react/buttonGroupStyle.jsx';
-import tooltips from 'assets/jss/material-kit-pro-react/tooltipsStyle.jsx';
+import checkboxes from '../../customCheckboxRadioSwitchStyle';
+import buttonGroup from '../../buttonGroupStyle';
+import tooltips from '../../tooltipsStyle';
 
 const contentAreas = {
   title,

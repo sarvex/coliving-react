@@ -22,11 +22,6 @@ import SectionComments from './Sections/SectionComments';
 import SectionSimilarStories from './Sections/SectionSimilarStories';
 
 class BlogPostPage extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
-
   render() {
     const { classes } = this.props;
     return (

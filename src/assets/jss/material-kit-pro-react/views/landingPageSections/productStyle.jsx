@@ -1,4 +1,4 @@
-import { title, grayColor } from 'assets/jss/material-kit-pro-react.jsx';
+import { title, grayColor } from '../../../material-kit-pro-react';
 
 const productStyle = {
   section: {

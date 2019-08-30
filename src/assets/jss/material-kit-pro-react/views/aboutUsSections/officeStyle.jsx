@@ -1,5 +1,5 @@
-import { title, description, mrAuto, mlAuto } from 'assets/jss/material-kit-pro-react.jsx';
-import imagesStyles from 'assets/jss/material-kit-pro-react/imagesStyles.jsx';
+import { title, description, mrAuto, mlAuto } from '../../../material-kit-pro-react';
+import imagesStyles from '../../imagesStyles';
 
 const { imgRaised } = imagesStyles;
 const rounded = imagesStyles.imgRounded;

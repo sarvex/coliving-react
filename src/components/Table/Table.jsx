@@ -10,7 +10,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
-import style from 'assets/jss/material-kit-pro-react/components/tableStyle.jsx';
+import style from 'assets/jss/material-kit-pro-react/components/tableStyle';
 
 function CustomTable({ ...props }) {
   const {

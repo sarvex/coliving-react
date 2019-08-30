@@ -26,11 +26,6 @@ import loginPageStyle from 'assets/jss/material-kit-pro-react/views/loginPageSty
 import image from 'assets/img/bg7.jpg';
 
 class LoginPage extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
-
   render() {
     const { classes } = this.props;
     return (

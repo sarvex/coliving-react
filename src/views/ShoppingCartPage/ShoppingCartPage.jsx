@@ -31,11 +31,6 @@ import product2 from 'assets/img/product2.jpg';
 import product3 from 'assets/img/product3.jpg';
 
 class ShoppingCartPage extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
-
   render() {
     const { classes } = this.props;
     return (

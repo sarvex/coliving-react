@@ -1,4 +1,4 @@
-import { whiteColor, grayColor } from 'assets/jss/material-kit-pro-react.jsx';
+import { whiteColor, grayColor } from '../material-kit-pro-react';
 
 const modalStyle = (theme) => ({
   modalRoot: {

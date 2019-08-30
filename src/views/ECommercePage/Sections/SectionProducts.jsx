@@ -15,15 +15,15 @@ import Cached from '@material-ui/icons/Cached';
 import Subject from '@material-ui/icons/Subject';
 import Check from '@material-ui/icons/Check';
 // core components
-import Accordion from 'components/Accordion/Accordion.jsx';
-import GridContainer from 'components/Grid/GridContainer.jsx';
-import GridItem from 'components/Grid/GridItem.jsx';
-import Card from 'components/Card/Card.jsx';
-import CardHeader from 'components/Card/CardHeader.jsx';
-import CardBody from 'components/Card/CardBody.jsx';
-import CardFooter from 'components/Card/CardFooter.jsx';
-import Button from 'components/CustomButtons/Button.jsx';
-import Clearfix from 'components/Clearfix/Clearfix.jsx';
+import Accordion from 'components/Accordion/Accordion';
+import GridContainer from 'components/Grid/GridContainer';
+import GridItem from 'components/Grid/GridItem';
+import Card from 'components/Card/Card';
+import CardHeader from 'components/Card/CardHeader';
+import CardBody from 'components/Card/CardBody';
+import CardFooter from 'components/Card/CardFooter';
+import Button from 'components/CustomButtons/Button';
+import Clearfix from 'components/Clearfix/Clearfix';
 
 import suit1 from 'assets/img/examples/suit-1.jpg';
 import suit2 from 'assets/img/examples/suit-2.jpg';
@@ -37,7 +37,7 @@ import color2 from 'assets/img/examples/color2.jpg';
 import dg3 from 'assets/img/dg3.jpg';
 import dg1 from 'assets/img/dg1.jpg';
 
-import styles from 'assets/jss/material-kit-pro-react/views/ecommerceSections/productsStyle.jsx';
+import styles from 'assets/jss/material-kit-pro-react/views/ecommerceSections/productsStyle';
 
 class SectionProducts extends React.Component {
   constructor(props) {

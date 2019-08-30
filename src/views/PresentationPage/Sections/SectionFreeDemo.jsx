@@ -1,19 +1,16 @@
 import React from 'react';
-// nodejs library that concatenates classes
 import classNames from 'classnames';
-// @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles';
-// @material-ui icons
 import Close from '@material-ui/icons/Close';
 import Check from '@material-ui/icons/Check';
-// core components
-import GridContainer from 'components/Grid/GridContainer.jsx';
-import GridItem from 'components/Grid/GridItem.jsx';
-import Card from 'components/Card/Card.jsx';
-import CardBody from 'components/Card/CardBody.jsx';
-import Button from 'components/CustomButtons/Button.jsx';
 
-import freeDemoStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/freeDemoStyle.jsx';
+import GridContainer from 'components/Grid/GridContainer';
+import GridItem from 'components/Grid/GridItem';
+import Card from 'components/Card/Card';
+import CardBody from 'components/Card/CardBody';
+import Button from 'components/CustomButtons/Button';
+
+import freeDemoStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/freeDemoStyle';
 
 class SectionFreeDemo extends React.Component {
   render() {

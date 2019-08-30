@@ -1,6 +1,6 @@
-import { whiteColor, hexToRgb, cardTitle } from 'assets/jss/material-kit-pro-react.jsx';
+import { whiteColor, hexToRgb, cardTitle } from '../../../material-kit-pro-react';
 
-import tooltipsStyle from 'assets/jss/material-kit-pro-react/tooltipsStyle.jsx';
+import tooltipsStyle from '../../tooltipsStyle';
 
 const sectionPillsStyle = {
   ...tooltipsStyle,

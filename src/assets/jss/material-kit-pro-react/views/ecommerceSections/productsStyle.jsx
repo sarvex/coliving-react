@@ -6,11 +6,11 @@ import {
   mlAuto,
   mrAuto,
   grayColor,
-} from 'assets/jss/material-kit-pro-react.jsx';
+} from '../../../material-kit-pro-react';
 
-import customCheckboxRadioSwitch from 'assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.jsx';
+import customCheckboxRadioSwitch from '../../customCheckboxRadioSwitchStyle';
 
-import tooltipsStyle from 'assets/jss/material-kit-pro-react/tooltipsStyle.jsx';
+import tooltipsStyle from '../../tooltipsStyle';
 
 const styles = {
   ...customCheckboxRadioSwitch,

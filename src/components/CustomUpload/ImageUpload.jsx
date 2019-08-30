@@ -1,9 +1,7 @@
 import React from 'react';
-// used for making the prop types of this component
 import PropTypes from 'prop-types';
 
-// core components
-import Button from 'components/CustomButtons/Button.jsx';
+import Button from 'components/CustomButtons/Button';
 
 import defaultImage from 'assets/img/image_placeholder.jpg';
 import defaultAvatar from 'assets/img/placeholder.jpg';

@@ -1,13 +1,10 @@
 import React from 'react';
-// nodejs library that concatenates classes
 import classNames from 'classnames';
-// core components
-import GridContainer from 'components/Grid/GridContainer.jsx';
-import GridItem from 'components/Grid/GridItem.jsx';
-// @material-ui/core components
+import GridContainer from 'components/Grid/GridContainer';
+import GridItem from 'components/Grid/GridItem';
 import withStyles from '@material-ui/core/styles/withStyles';
 
-import cardsStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/cardsStyle.jsx';
+import cardsStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/cardsStyle';
 
 import cardsTest from 'assets/img/assets-for-demo/cards-test.png';
 

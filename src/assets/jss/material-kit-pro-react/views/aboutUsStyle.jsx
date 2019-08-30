@@ -1,4 +1,4 @@
-import { container, title, main, mainRaised, mrAuto, whiteColor, mlAuto } from 'assets/jss/material-kit-pro-react.jsx';
+import { container, title, main, mainRaised, mrAuto, whiteColor, mlAuto } from '../../material-kit-pro-react';
 
 const aboutUsStyle = {
   main,

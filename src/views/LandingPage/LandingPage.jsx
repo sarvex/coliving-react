@@ -24,11 +24,6 @@ import SectionTeam from './Sections/SectionTeam';
 import SectionWork from './Sections/SectionWork';
 
 class LandingPage extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
-
   render() {
     const { classes, ...rest } = this.props;
     return (

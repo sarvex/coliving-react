@@ -1,4 +1,4 @@
-import { mrAuto, mlAuto, cardTitle, whiteColor, infoColor, hexToRgb } from 'assets/jss/material-kit-pro-react.jsx';
+import { mrAuto, mlAuto, cardTitle, whiteColor, infoColor, hexToRgb } from 'assets/jss/material-kit-pro-react';
 
 const pricingStyle = {
   mrAuto,

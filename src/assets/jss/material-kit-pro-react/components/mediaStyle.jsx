@@ -1,4 +1,4 @@
-import { title, blackColor, grayColor, hexToRgb } from 'assets/jss/material-kit-pro-react.jsx';
+import { title, blackColor, grayColor, hexToRgb } from '../../material-kit-pro-react';
 
 const mediaStyle = {
   media: {

@@ -9,12 +9,12 @@ import {
   whiteColor,
   grayColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react.jsx';
+} from '../../../material-kit-pro-react';
 
-import modalStyle from 'assets/jss/material-kit-pro-react/modalStyle.jsx';
-import tooltipsStyle from 'assets/jss/material-kit-pro-react/tooltipsStyle.jsx';
-import popoverStyles from 'assets/jss/material-kit-pro-react/popoverStyles.jsx';
-import customCheckboxRadioSwitch from 'assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.jsx';
+import modalStyle from '../../modalStyle';
+import tooltipsStyle from '../../tooltipsStyle';
+import popoverStyles from '../../popoverStyles';
+import customCheckboxRadioSwitch from '../../customCheckboxRadioSwitchStyle';
 
 const javascriptStyles = (theme) => ({
   container,

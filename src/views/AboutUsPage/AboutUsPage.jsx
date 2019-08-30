@@ -1,19 +1,14 @@
 import React from 'react';
-// nodejs library that concatenates classes
 import classNames from 'classnames';
-// @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-// @material-ui/icons
 import Favorite from '@material-ui/icons/Favorite';
-// core components
 import Header from 'components/Header/Header';
 import GridContainer from 'components/Grid/GridContainer';
 import GridItem from 'components/Grid/GridItem';
 import Parallax from 'components/Parallax/Parallax';
 import Footer from 'components/Footer/Footer';
-// sections for this page
 import HeaderLinks from 'components/Header/HeaderLinks';
 
 import aboutUsStyle from 'assets/jss/material-kit-pro-react/views/aboutUsStyle';
@@ -25,7 +20,7 @@ import SectionOffice from './Sections/SectionOffice';
 import SectionContact from './Sections/SectionContact';
 
 const AboutUsPage = (props) => {
-  const { classes } = this.props;
+  const { classes } = props;
   return (
     <div>
       <Header

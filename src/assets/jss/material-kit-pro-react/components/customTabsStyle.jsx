@@ -1,4 +1,4 @@
-import { whiteColor, defaultFont, hexToRgb } from 'assets/jss/material-kit-pro-react.jsx';
+import { whiteColor, defaultFont, hexToRgb } from '../../material-kit-pro-react';
 
 const customTabsStyle = (theme) => ({
   cardTitle: {

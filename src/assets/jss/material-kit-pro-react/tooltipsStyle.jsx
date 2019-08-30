@@ -1,4 +1,4 @@
-import { whiteColor, blackColor, grayColor, hexToRgb } from 'assets/jss/material-kit-pro-react.jsx';
+import { whiteColor, blackColor, grayColor, hexToRgb } from '../material-kit-pro-react';
 
 const tooltipsStyle = {
   tooltip: {
