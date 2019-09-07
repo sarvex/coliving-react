@@ -1,29 +1,29 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
-import FormatAlignLeft from '@material-ui/icons/FormatAlignLeft';
-import Favorite from '@material-ui/icons/Favorite';
+import FormatAlignLeft from '@material-ui/icons/FormatAlignLeft'
+import Favorite from '@material-ui/icons/Favorite'
 // core components
-import Header from 'components/Header/Header';
-import HeaderLinks from 'components/Header/HeaderLinks';
-import Parallax from 'components/Parallax/Parallax';
-import Footer from 'components/Footer/Footer';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Button from 'components/CustomButtons/Button';
+import Header from 'Components/Header/Header'
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import Parallax from 'Components/Parallax/Parallax'
+import Footer from 'Components/Footer/Footer'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Button from 'Components/CustomButtons/Button'
 // sections for this page
-import blogPostPageStyle from 'assets/jss/material-kit-pro-react/views/blogPostPageStyle';
-import SectionText from './Sections/SectionText';
-import SectionBlogInfo from './Sections/SectionBlogInfo';
-import SectionComments from './Sections/SectionComments';
-import SectionSimilarStories from './Sections/SectionSimilarStories';
+import blogPostPageStyle from 'Assets/jss/material-kit-pro-react/views/blogPostPageStyle'
+import SectionText from './Sections/SectionText'
+import SectionBlogInfo from './Sections/SectionBlogInfo'
+import SectionComments from './Sections/SectionComments'
+import SectionSimilarStories from './Sections/SectionSimilarStories'
 
 class BlogPostPage extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div>
         <Header
@@ -36,7 +36,7 @@ class BlogPostPage extends React.Component {
             color: 'info',
           }}
         />
-        <Parallax image={require('assets/img/bg5.jpg')} filter='dark'>
+        <Parallax image={require('Assets/img/bg5.jpg')} filter='dark'>
           <div className={classes.container}>
             <GridContainer justify='center'>
               <GridItem md={8} className={classes.textCenter}>
@@ -95,8 +95,8 @@ class BlogPostPage extends React.Component {
           }
         />
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(blogPostPageStyle)(BlogPostPage);
+export default withStyles(blogPostPageStyle)(BlogPostPage)

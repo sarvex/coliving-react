@@ -1,31 +1,31 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite';
+import Favorite from '@material-ui/icons/Favorite'
 // core components
-import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Button from 'components/CustomButtons/Button';
-import HeaderLinks from 'components/Header/HeaderLinks';
-import Parallax from 'components/Parallax/Parallax';
+import Header from 'Components/Header/Header'
+import Footer from 'Components/Footer/Footer'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Button from 'Components/CustomButtons/Button'
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import Parallax from 'Components/Parallax/Parallax'
 
-import landingPageStyle from 'assets/jss/material-kit-pro-react/views/landingPageStyle';
+import landingPageStyle from 'Assets/jss/material-kit-pro-react/views/landingPageStyle'
 
 // Sections for this page
-import SectionProduct from './Sections/SectionProduct';
-import SectionTeam from './Sections/SectionTeam';
-import SectionWork from './Sections/SectionWork';
+import SectionProduct from './Sections/SectionProduct'
+import SectionTeam from './Sections/SectionTeam'
+import SectionWork from './Sections/SectionWork'
 
 class LandingPage extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes, ...rest } = this.props
     return (
       <div>
         <Header
@@ -39,7 +39,7 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require('assets/img/bg8.jpg')} filter='dark'>
+        <Parallax image={require('Assets/img/bg8.jpg')} filter='dark'>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={6} md={6}>
@@ -104,8 +104,8 @@ class LandingPage extends React.Component {
           }
         />
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(landingPageStyle)(LandingPage);
+export default withStyles(landingPageStyle)(LandingPage)

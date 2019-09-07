@@ -9,7 +9,7 @@ import {
   whiteColor,
   sectionDark,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const projectsSection = {
   container,
@@ -92,6 +92,6 @@ const projectsSection = {
       maxWidth: '970px',
     },
   },
-};
+}
 
-export default projectsSection;
+export default projectsSection

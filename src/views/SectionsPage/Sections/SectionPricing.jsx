@@ -1,32 +1,32 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
-import Weekend from '@material-ui/icons/Weekend';
-import Home from '@material-ui/icons/Home';
-import Business from '@material-ui/icons/Business';
-import AccountBalance from '@material-ui/icons/AccountBalance';
-import Check from '@material-ui/icons/Check';
-import Close from '@material-ui/icons/Close';
+import Weekend from '@material-ui/icons/Weekend'
+import Home from '@material-ui/icons/Home'
+import Business from '@material-ui/icons/Business'
+import AccountBalance from '@material-ui/icons/AccountBalance'
+import Check from '@material-ui/icons/Check'
+import Close from '@material-ui/icons/Close'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import CardFooter from 'components/Card/CardFooter';
-import Button from 'components/CustomButtons/Button';
-import NavPills from 'components/NavPills/NavPills';
-import Success from 'components/Typography/Success';
-import Danger from 'components/Typography/Danger';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import CardFooter from 'Components/Card/CardFooter'
+import Button from 'Components/CustomButtons/Button'
+import NavPills from 'Components/NavPills/NavPills'
+import Success from 'Components/Typography/Success'
+import Danger from 'Components/Typography/Danger'
 
-import pricingStyle from 'assets/jss/material-kit-pro-react/views/sectionsSections/pricingStyle';
+import pricingStyle from 'Assets/jss/material-kit-pro-react/views/sectionsSections/pricingStyle'
 
-import bg11 from 'assets/img/bg11.jpg';
-import city from 'assets/img/examples/city.jpg';
-import cardBlog3 from 'assets/img/examples/card-blog3.jpg';
+import bg11 from 'Assets/img/bg11.jpg'
+import city from 'Assets/img/examples/city.jpg'
+import cardBlog3 from 'Assets/img/examples/card-blog3.jpg'
 
 function SectionPricing({ ...props }) {
-  const { classes, ...rest } = props;
+  const { classes, ...rest } = props
   return (
     <div className='cd-section' {...rest}>
       {/* Pricing 1 START */}
@@ -627,7 +627,7 @@ function SectionPricing({ ...props }) {
       </div>
       {/* Pricing 5 END */}
     </div>
-  );
+  )
 }
 
-export default withStyles(pricingStyle)(SectionPricing);
+export default withStyles(pricingStyle)(SectionPricing)

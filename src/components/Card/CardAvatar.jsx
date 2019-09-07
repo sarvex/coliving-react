@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // nodejs library to set properties for components
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
 // core components
 
-import cardAvatarStyle from 'assets/jss/material-kit-pro-react/components/cardAvatarStyle';
+import cardAvatarStyle from 'Assets/jss/material-kit-pro-react/components/cardAvatarStyle'
 
 function CardAvatar({ ...props }) {
-  const { classes, children, className, plain, profile, testimonial, testimonialFooter, ...rest } = props;
+  const { classes, children, className, plain, profile, testimonial, testimonialFooter, ...rest } = props
   const cardAvatarClasses = classNames({
     [classes.cardAvatar]: true,
     [classes.cardAvatarProfile]: profile,
@@ -19,12 +19,12 @@ function CardAvatar({ ...props }) {
     [classes.cardAvatarTestimonial]: testimonial,
     [classes.cardAvatarTestimonialFooter]: testimonialFooter,
     [className]: className !== undefined,
-  });
+  })
   return (
     <div className={cardAvatarClasses} {...rest}>
       {children}
     </div>
-  );
+  )
 }
 
 CardAvatar.propTypes = {
@@ -34,6 +34,6 @@ CardAvatar.propTypes = {
   plain: PropTypes.bool,
   testimonial: PropTypes.bool,
   testimonialFooter: PropTypes.bool,
-};
+}
 
-export default withStyles(cardAvatarStyle)(CardAvatar);
+export default withStyles(cardAvatarStyle)(CardAvatar)

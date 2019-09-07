@@ -1,37 +1,37 @@
-import React from 'react';
+import React from 'react'
 // nodejs library to set properties for components
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import Icon from '@material-ui/core/Icon';
+import withStyles from '@material-ui/core/styles/withStyles'
+import Icon from '@material-ui/core/Icon'
 
-import infoStyle from 'assets/jss/material-kit-pro-react/components/infoStyle';
+import infoStyle from 'Assets/jss/material-kit-pro-react/components/infoStyle'
 
 function InfoArea({ ...props }) {
-  const { classes, title, description, iconColor, vertical, className } = props;
+  const { classes, title, description, iconColor, vertical, className } = props
   const iconWrapper = classNames({
     [classes.iconWrapper]: true,
     [classes[iconColor]]: true,
     [classes.iconWrapperVertical]: vertical,
-  });
+  })
   const iconClasses = classNames({
     [classes.icon]: true,
     [classes.iconVertical]: vertical,
-  });
+  })
   const infoAreaClasses = classNames({
     [classes.infoArea]: true,
     [className]: className !== undefined,
-  });
-  let icon = null;
+  })
+  let icon = null
   switch (typeof props.icon) {
     case 'string':
-      icon = <Icon className={iconClasses}>{props.icon}</Icon>;
-      break;
+      icon = <Icon className={iconClasses}>{props.icon}</Icon>
+      break
     default:
-      icon = <props.icon className={iconClasses} />;
-      break;
+      icon = <props.icon className={iconClasses} />
+      break
   }
   return (
     <div className={infoAreaClasses}>
@@ -41,12 +41,12 @@ function InfoArea({ ...props }) {
         <div className={classes.description}>{description}</div>
       </div>
     </div>
-  );
+  )
 }
 
 InfoArea.defaultProps = {
   iconColor: 'gray',
-};
+}
 
 InfoArea.propTypes = {
   classes: PropTypes.object.isRequired,
@@ -56,6 +56,6 @@ InfoArea.propTypes = {
   iconColor: PropTypes.oneOf(['primary', 'warning', 'danger', 'success', 'info', 'rose', 'gray']),
   vertical: PropTypes.bool,
   className: PropTypes.string,
-};
+}
 
-export default withStyles(infoStyle)(InfoArea);
+export default withStyles(infoStyle)(InfoArea)

@@ -1,20 +1,20 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 
 // @material-ui/icons
-import Chat from '@material-ui/icons/Chat';
-import VerifiedUser from '@material-ui/icons/VerifiedUser';
-import Fingerprint from '@material-ui/icons/Fingerprint';
+import Chat from '@material-ui/icons/Chat'
+import VerifiedUser from '@material-ui/icons/VerifiedUser'
+import Fingerprint from '@material-ui/icons/Fingerprint'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import InfoArea from 'components/InfoArea/InfoArea';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import InfoArea from 'Components/InfoArea/InfoArea'
 
-import productStyle from 'assets/jss/material-kit-pro-react/views/landingPageSections/productStyle';
+import productStyle from 'Assets/jss/material-kit-pro-react/views/landingPageSections/productStyle'
 
 const SectionProduct = (props) => {
-  const { classes } = this.props;
+  const { classes } = this.props
   return (
     <div className={classes.section}>
       <GridContainer justify='center'>
@@ -59,7 +59,7 @@ const SectionProduct = (props) => {
         </GridContainer>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default withStyles(productStyle)(SectionProduct);
+export default withStyles(productStyle)(SectionProduct)

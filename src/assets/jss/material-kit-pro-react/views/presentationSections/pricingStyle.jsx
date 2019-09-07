@@ -9,7 +9,7 @@ import {
   blackColor,
   grayColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const pricingStyle = {
   container,
@@ -39,7 +39,7 @@ const pricingStyle = {
     ...card,
     marginBottom: '30px',
     boxShadow: `0 2px 2px 0 rgba(${hexToRgb(blackColor)},0.14), 0 3px 1px -2px rgba(${hexToRgb(
-      blackColor,
+      blackColor
     )},0.2), 0 1px 5px 0 rgba(${hexToRgb(blackColor)},0.12)`,
     '& ul': {
       listStyle: 'none',
@@ -87,6 +87,6 @@ const pricingStyle = {
   navPillsContent: {
     padding: '20px 0px 50px 0px',
   },
-};
+}
 
-export default pricingStyle;
+export default pricingStyle

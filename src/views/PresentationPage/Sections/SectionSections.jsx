@@ -1,15 +1,15 @@
-import React from 'react';
-import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import classNames from 'classnames'
+import { Link } from 'react-router-dom'
+import withStyles from '@material-ui/core/styles/withStyles'
 
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Button from 'components/CustomButtons/Button';
-import withStyles from '@material-ui/core/styles/withStyles';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Button from 'Components/CustomButtons/Button'
 
-import sectionsStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/sectionsStyle';
+import sectionsStyle from 'Assets/jss/material-kit-pro-react/views/presentationSections/sectionsStyle'
 
-import imgs from 'assets/img/assets-for-demo/sections/imgs';
+import imgs from 'Assets/img/assets-for-demo/sections/imgs'
 
 class SectionSections extends React.Component {
   renderContainerFluid(cssClass) {
@@ -19,17 +19,17 @@ class SectionSections extends React.Component {
           {row.map((el, index) => {
             return (
               <GridItem md={3} sm={3} xs={12} key={`${el}_${index}`} className={cssClass}>
-                <img src={require(`../../../assets/img/assets-for-demo/sections/${el}.jpg`)} alt={el} key={el[index]} />
+                <img src={require(`Assets/img/assets-for-demo/sections/${el}.jpg`)} alt={el} key={el[index]} />
               </GridItem>
-            );
+            )
           })}
         </GridContainer>
-      );
-    });
+      )
+    })
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classes.sectionSections}>
         <div className={classes.container}>
@@ -53,8 +53,8 @@ class SectionSections extends React.Component {
         </div>
         <div className={classes.containerFluid}>{this.renderContainerFluid(classes.photoGallery)}</div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(sectionsStyle)(SectionSections);
+export default withStyles(sectionsStyle)(SectionSections)

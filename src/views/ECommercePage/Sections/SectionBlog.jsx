@@ -1,20 +1,20 @@
-import React from 'react';
-import classNames from 'classnames';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardHeader from 'components/Card/CardHeader';
-import CardBody from 'components/Card/CardBody';
-import withStyles from '@material-ui/core/styles/withStyles';
+import React from 'react'
+import classNames from 'classnames'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardHeader from 'Components/Card/CardHeader'
+import CardBody from 'Components/Card/CardBody'
+import withStyles from '@material-ui/core/styles/withStyles'
 
-import dg6 from 'assets/img/dg6.jpg';
-import dg10 from 'assets/img/dg10.jpg';
-import dg9 from 'assets/img/dg9.jpg';
+import dg6 from 'Assets/img/dg6.jpg'
+import dg10 from 'Assets/img/dg10.jpg'
+import dg9 from 'Assets/img/dg9.jpg'
 
-import styles from 'assets/jss/material-kit-pro-react/views/ecommerceSections/blogStyle';
+import styles from 'Assets/jss/material-kit-pro-react/views/ecommerceSections/blogStyle'
 
 const SectionBlog = (props) => {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.section}>
       <div className={classes.container}>
@@ -83,7 +83,7 @@ const SectionBlog = (props) => {
         </GridContainer>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default withStyles(styles)(SectionBlog);
+export default withStyles(styles)(SectionBlog)

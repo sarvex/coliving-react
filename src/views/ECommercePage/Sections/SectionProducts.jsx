@@ -1,58 +1,58 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // plugin that creates slider
-import nouislider from 'nouislider';
+import nouislider from 'nouislider'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import Checkbox from '@material-ui/core/Checkbox';
-import Tooltip from '@material-ui/core/Tooltip';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+import withStyles from '@material-ui/core/styles/withStyles'
+import Checkbox from '@material-ui/core/Checkbox'
+import Tooltip from '@material-ui/core/Tooltip'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
 // @material-ui icons
-import Favorite from '@material-ui/icons/Favorite';
-import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
-import Cached from '@material-ui/icons/Cached';
-import Subject from '@material-ui/icons/Subject';
-import Check from '@material-ui/icons/Check';
+import Favorite from '@material-ui/icons/Favorite'
+import FavoriteBorder from '@material-ui/icons/FavoriteBorder'
+import Cached from '@material-ui/icons/Cached'
+import Subject from '@material-ui/icons/Subject'
+import Check from '@material-ui/icons/Check'
 // core components
-import Accordion from 'components/Accordion/Accordion';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardHeader from 'components/Card/CardHeader';
-import CardBody from 'components/Card/CardBody';
-import CardFooter from 'components/Card/CardFooter';
-import Button from 'components/CustomButtons/Button';
-import Clearfix from 'components/Clearfix/Clearfix';
+import Accordion from 'Components/Accordion/Accordion'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardHeader from 'Components/Card/CardHeader'
+import CardBody from 'Components/Card/CardBody'
+import CardFooter from 'Components/Card/CardFooter'
+import Button from 'Components/CustomButtons/Button'
+import Clearfix from 'Components/Clearfix/Clearfix'
 
-import suit1 from 'assets/img/examples/suit-1.jpg';
-import suit2 from 'assets/img/examples/suit-2.jpg';
-import suit3 from 'assets/img/examples/suit-3.jpg';
-import suit4 from 'assets/img/examples/suit-4.jpg';
-import suit5 from 'assets/img/examples/suit-5.jpg';
-import suit6 from 'assets/img/examples/suit-6.jpg';
-import color1 from 'assets/img/examples/color1.jpg';
-import color3 from 'assets/img/examples/color3.jpg';
-import color2 from 'assets/img/examples/color2.jpg';
-import dg3 from 'assets/img/dg3.jpg';
-import dg1 from 'assets/img/dg1.jpg';
+import suit1 from 'Assets/img/examples/suit-1.jpg'
+import suit2 from 'Assets/img/examples/suit-2.jpg'
+import suit3 from 'Assets/img/examples/suit-3.jpg'
+import suit4 from 'Assets/img/examples/suit-4.jpg'
+import suit5 from 'Assets/img/examples/suit-5.jpg'
+import suit6 from 'Assets/img/examples/suit-6.jpg'
+import color1 from 'Assets/img/examples/color1.jpg'
+import color3 from 'Assets/img/examples/color3.jpg'
+import color2 from 'Assets/img/examples/color2.jpg'
+import dg3 from 'Assets/img/dg3.jpg'
+import dg1 from 'Assets/img/dg1.jpg'
 
-import styles from 'assets/jss/material-kit-pro-react/views/ecommerceSections/productsStyle';
+import styles from 'Assets/jss/material-kit-pro-react/views/ecommerceSections/productsStyle'
 
 class SectionProducts extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       checked: [1, 9, 27],
       priceRange: [101, 790],
-    };
+    }
   }
 
   componentDidMount() {
-    const slider = this.refs.slider1;
-    const { priceLow } = this.refs;
-    const { priceHigh } = this.refs;
+    const slider = this.refs.slider1
+    const { priceLow } = this.refs
+    const { priceHigh } = this.refs
     nouislider
       .create(slider, {
         start: this.state.priceRange,
@@ -61,31 +61,31 @@ class SectionProducts extends React.Component {
         step: 1,
       })
       .on('update', function(values, handle) {
-        const currencyLow = priceLow.dataset.currency;
-        const currencyHigh = priceHigh.dataset.currency;
-        priceLow.innerHTML = currencyLow + Math.round(values[0]);
-        priceHigh.innerHTML = currencyHigh + Math.round(values[1]);
-      });
+        const currencyLow = priceLow.dataset.currency
+        const currencyHigh = priceHigh.dataset.currency
+        priceLow.innerHTML = currencyLow + Math.round(values[0])
+        priceHigh.innerHTML = currencyHigh + Math.round(values[1])
+      })
   }
 
   handleToggle(value) {
-    const { checked } = this.state;
-    const currentIndex = checked.indexOf(value);
-    const newChecked = [...checked];
+    const { checked } = this.state
+    const currentIndex = checked.indexOf(value)
+    const newChecked = [...checked]
 
     if (currentIndex === -1) {
-      newChecked.push(value);
+      newChecked.push(value)
     } else {
-      newChecked.splice(currentIndex, 1);
+      newChecked.splice(currentIndex, 1)
     }
 
     this.setState({
       checked: newChecked,
-    });
+    })
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
 
     return (
       <div className={classes.section}>
@@ -988,8 +988,8 @@ class SectionProducts extends React.Component {
           </GridContainer>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(styles)(SectionProducts);
+export default withStyles(styles)(SectionProducts)

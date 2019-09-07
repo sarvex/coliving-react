@@ -1,58 +1,58 @@
-import React from 'react';
-import classNames from 'classnames';
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import Favorite from '@material-ui/icons/Favorite';
-import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Parallax from 'components/Parallax/Parallax';
-import HeaderLinks from 'components/Header/HeaderLinks';
-import componentsStyle from 'assets/jss/material-kit-pro-react/views/componentsStyle';
-import SectionBasics from './Sections/SectionBasics';
-import SectionNavbars from './Sections/SectionNavbars';
-import SectionTabs from './Sections/SectionTabs';
-import SectionPills from './Sections/SectionPills';
-import SectionNotifications from './Sections/SectionNotifications';
-import SectionPreFooter from './Sections/SectionPreFooter';
-import SectionFooter from './Sections/SectionFooter';
-import SectionTypography from './Sections/SectionTypography';
-import SectionCards from './Sections/SectionCards';
-import SectionJavascript from './Sections/SectionJavascript';
-import SectionCarousel from './Sections/SectionCarousel';
+import React from 'react'
+import classNames from 'classnames'
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import Favorite from '@material-ui/icons/Favorite'
+import Header from 'Components/Header/Header'
+import Footer from 'Components/Footer/Footer'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Parallax from 'Components/Parallax/Parallax'
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import componentsStyle from 'Assets/jss/material-kit-pro-react/views/componentsStyle'
+import SectionBasics from './Sections/SectionBasics'
+import SectionNavbars from './Sections/SectionNavbars'
+import SectionTabs from './Sections/SectionTabs'
+import SectionPills from './Sections/SectionPills'
+import SectionNotifications from './Sections/SectionNotifications'
+import SectionPreFooter from './Sections/SectionPreFooter'
+import SectionFooter from './Sections/SectionFooter'
+import SectionTypography from './Sections/SectionTypography'
+import SectionCards from './Sections/SectionCards'
+import SectionJavascript from './Sections/SectionJavascript'
+import SectionCarousel from './Sections/SectionCarousel'
 
 class Components extends React.Component {
   componentDidMount() {
-    const href = window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
-    if (window.location.href.lastIndexOf('#') > 0) document.getElementById(href).scrollIntoView();
-    window.addEventListener('scroll', this.updateView);
-    this.updateView();
+    const href = window.location.href.substring(window.location.href.lastIndexOf('#') + 1)
+    if (window.location.href.lastIndexOf('#') > 0) document.getElementById(href).scrollIntoView()
+    window.addEventListener('scroll', this.updateView)
+    this.updateView()
   }
 
   componentDidUpdate() {
-    const href = window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
-    document.getElementById(href).scrollIntoView();
+    const href = window.location.href.substring(window.location.href.lastIndexOf('#') + 1)
+    document.getElementById(href).scrollIntoView()
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.updateView);
+    window.removeEventListener('scroll', this.updateView)
   }
 
   easeInOutQuad(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * t * t + b;
-    t--;
-    return (-c / 2) * (t * (t - 2) - 1) + b;
+    t /= d / 2
+    if (t < 1) return (c / 2) * t * t + b
+    t--
+    return (-c / 2) * (t * (t - 2) - 1) + b
   }
 
   updateView() {
-    const contentSections = document.getElementsByClassName('cd-section');
-    const navigationItems = document.getElementById('cd-vertical-nav').getElementsByTagName('a');
+    const contentSections = document.getElementsByClassName('cd-section')
+    const navigationItems = document.getElementById('cd-vertical-nav').getElementsByTagName('a')
 
     for (let i = 0; i < contentSections.length; i++) {
-      const activeSection = parseInt(navigationItems[i].getAttribute('data-number'), 10) - 1;
+      const activeSection = parseInt(navigationItems[i].getAttribute('data-number'), 10) - 1
       if (
         contentSections[i].offsetTop - window.innerHeight / 2 + document.getElementById('main-panel').offsetTop <
           window.pageYOffset &&
@@ -62,37 +62,37 @@ class Components extends React.Component {
           document.getElementById('main-panel').offsetTop >
           window.pageYOffset
       ) {
-        navigationItems[activeSection].classList.add('is-selected');
+        navigationItems[activeSection].classList.add('is-selected')
       } else {
-        navigationItems[activeSection].classList.remove('is-selected');
+        navigationItems[activeSection].classList.remove('is-selected')
       }
     }
   }
 
   smoothScroll(target) {
-    const targetScroll = document.getElementById(target);
-    this.scrollTo(document.documentElement, targetScroll.offsetTop, 900);
+    const targetScroll = document.getElementById(target)
+    this.scrollTo(document.documentElement, targetScroll.offsetTop, 900)
   }
 
   scrollTo(element, to, duration) {
-    const start = element.scrollTop;
-    const change = to - start + document.getElementById('main-panel').offsetTop;
-    let currentTime = 0;
-    const increment = 20;
+    const start = element.scrollTop
+    const change = to - start + document.getElementById('main-panel').offsetTop
+    let currentTime = 0
+    const increment = 20
 
     var animateScroll = function() {
-      currentTime += increment;
-      const val = this.easeInOutQuad(currentTime, start, change, duration);
-      element.scrollTop = val;
+      currentTime += increment
+      const val = this.easeInOutQuad(currentTime, start, change, duration)
+      element.scrollTop = val
       if (currentTime < duration) {
-        setTimeout(animateScroll, increment);
+        setTimeout(animateScroll, increment)
       }
-    }.bind(this);
-    animateScroll();
+    }.bind(this)
+    animateScroll()
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div>
         <Header
@@ -105,7 +105,7 @@ class Components extends React.Component {
             color: 'info',
           }}
         />
-        <Parallax image={require('assets/img/bg4.jpg')} className={classes.parallax}>
+        <Parallax image={require('Assets/img/bg4.jpg')} className={classes.parallax}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
@@ -143,8 +143,8 @@ class Components extends React.Component {
                 data-number='1'
                 className=''
                 onClick={(e) => {
-                  e.preventDefault();
-                  this.smoothScroll('buttons');
+                  e.preventDefault()
+                  this.smoothScroll('buttons')
                 }}>
                 <span className='cd-dot' />
                 <span className='cd-label'>Basic Elements</span>
@@ -156,8 +156,8 @@ class Components extends React.Component {
                 data-number='2'
                 className=''
                 onClick={(e) => {
-                  e.preventDefault();
-                  this.smoothScroll('navigation');
+                  e.preventDefault()
+                  this.smoothScroll('navigation')
                 }}>
                 <span className='cd-dot' />
                 <span className='cd-label'>Navigation</span>
@@ -169,8 +169,8 @@ class Components extends React.Component {
                 data-number='3'
                 className=''
                 onClick={(e) => {
-                  e.preventDefault();
-                  this.smoothScroll('notifications');
+                  e.preventDefault()
+                  this.smoothScroll('notifications')
                 }}>
                 <span className='cd-dot' />
                 <span className='cd-label'>Notifications</span>
@@ -182,8 +182,8 @@ class Components extends React.Component {
                 data-number='4'
                 className=''
                 onClick={(e) => {
-                  e.preventDefault();
-                  this.smoothScroll('footers');
+                  e.preventDefault()
+                  this.smoothScroll('footers')
                 }}>
                 <span className='cd-dot' />
                 <span className='cd-label'>Footers</span>
@@ -195,8 +195,8 @@ class Components extends React.Component {
                 data-number='5'
                 className=''
                 onClick={(e) => {
-                  e.preventDefault();
-                  this.smoothScroll('typography');
+                  e.preventDefault()
+                  this.smoothScroll('typography')
                 }}>
                 <span className='cd-dot' />
                 <span className='cd-label'>Typography</span>
@@ -208,8 +208,8 @@ class Components extends React.Component {
                 data-number='6'
                 className=''
                 onClick={(e) => {
-                  e.preventDefault();
-                  this.smoothScroll('contentAreas');
+                  e.preventDefault()
+                  this.smoothScroll('contentAreas')
                 }}>
                 <span className='cd-dot' />
                 <span className='cd-label'>Content Areas</span>
@@ -221,8 +221,8 @@ class Components extends React.Component {
                 data-number='7'
                 className=''
                 onClick={(e) => {
-                  e.preventDefault();
-                  this.smoothScroll('cards');
+                  e.preventDefault()
+                  this.smoothScroll('cards')
                 }}>
                 <span className='cd-dot' />
                 <span className='cd-label'>Cards</span>
@@ -234,8 +234,8 @@ class Components extends React.Component {
                 data-number='8'
                 className=''
                 onClick={(e) => {
-                  e.preventDefault();
-                  this.smoothScroll('morphingCards');
+                  e.preventDefault()
+                  this.smoothScroll('morphingCards')
                 }}>
                 <span className='cd-dot' />
                 <span className='cd-label'>Morphing Cards</span>
@@ -247,8 +247,8 @@ class Components extends React.Component {
                 data-number='9'
                 className=''
                 onClick={(e) => {
-                  e.preventDefault();
-                  this.smoothScroll('javascriptComponents');
+                  e.preventDefault()
+                  this.smoothScroll('javascriptComponents')
                 }}>
                 <span className='cd-dot' />
                 <span className='cd-label'>Javascript</span>
@@ -291,8 +291,8 @@ class Components extends React.Component {
           }
         />
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(componentsStyle)(Components);
+export default withStyles(componentsStyle)(Components)

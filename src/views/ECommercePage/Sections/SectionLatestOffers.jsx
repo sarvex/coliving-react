@@ -1,24 +1,24 @@
-import React from 'react';
-import classNames from 'classnames';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardHeader from 'components/Card/CardHeader';
-import CardBody from 'components/Card/CardBody';
-import CardFooter from 'components/Card/CardFooter';
-import Button from 'components/CustomButtons/Button';
-import withStyles from '@material-ui/core/styles/withStyles';
-import Tooltip from '@material-ui/core/Tooltip';
-import Favorite from '@material-ui/icons/Favorite';
+import React from 'react'
+import classNames from 'classnames'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardHeader from 'Components/Card/CardHeader'
+import CardBody from 'Components/Card/CardBody'
+import CardFooter from 'Components/Card/CardFooter'
+import Button from 'Components/CustomButtons/Button'
+import withStyles from '@material-ui/core/styles/withStyles'
+import Tooltip from '@material-ui/core/Tooltip'
+import Favorite from '@material-ui/icons/Favorite'
 
-import styles from 'assets/jss/material-kit-pro-react/views/ecommerceSections/latestOffersStyle';
+import styles from 'Assets/jss/material-kit-pro-react/views/ecommerceSections/latestOffersStyle'
 
-import gucci from 'assets/img/examples/gucci.jpg';
-import tomFord from 'assets/img/examples/tom-ford.jpg';
-import dolce from 'assets/img/examples/dolce.jpg';
+import gucci from 'Assets/img/examples/gucci.jpg'
+import tomFord from 'Assets/img/examples/tom-ford.jpg'
+import dolce from 'Assets/img/examples/dolce.jpg'
 
 const SectionLatestOffers = (props) => {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.section}>
       <div className={classes.container}>
@@ -129,7 +129,7 @@ const SectionLatestOffers = (props) => {
         </GridContainer>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default withStyles(styles)(SectionLatestOffers);
+export default withStyles(styles)(SectionLatestOffers)

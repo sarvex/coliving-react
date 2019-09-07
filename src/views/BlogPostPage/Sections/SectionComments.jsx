@@ -1,25 +1,25 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import Tooltip from '@material-ui/core/Tooltip';
+import withStyles from '@material-ui/core/styles/withStyles'
+import Tooltip from '@material-ui/core/Tooltip'
 // @material-ui/icons
-import Reply from '@material-ui/icons/Reply';
-import Favorite from '@material-ui/icons/Favorite';
+import Reply from '@material-ui/icons/Reply'
+import Favorite from '@material-ui/icons/Favorite'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Media from 'components/Media/Media';
-import Button from 'components/CustomButtons/Button';
-import CustomInput from 'components/CustomInput/CustomInput';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Media from 'Components/Media/Media'
+import Button from 'Components/CustomButtons/Button'
+import CustomInput from 'Components/CustomInput/CustomInput'
 
-import profile4 from 'assets/img/faces/card-profile4-square.jpg';
-import profile1 from 'assets/img/faces/card-profile1-square.jpg';
-import profile6 from 'assets/img/faces/card-profile6-square.jpg';
+import profile4 from 'Assets/img/faces/card-profile4-square.jpg'
+import profile1 from 'Assets/img/faces/card-profile1-square.jpg'
+import profile6 from 'Assets/img/faces/card-profile6-square.jpg'
 
-import sectionCommentsStyle from 'assets/jss/material-kit-pro-react/views/blogPostSections/sectionCommentsStyle';
+import sectionCommentsStyle from 'Assets/jss/material-kit-pro-react/views/blogPostSections/sectionCommentsStyle'
 
 function SectionComments({ ...props }) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.section}>
       <GridContainer justify='center'>
@@ -149,7 +149,7 @@ function SectionComments({ ...props }) {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-export default withStyles(sectionCommentsStyle)(SectionComments);
+export default withStyles(sectionCommentsStyle)(SectionComments)

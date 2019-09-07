@@ -1,34 +1,34 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
 // core components
-import Header from 'components/Header/Header';
-import HeaderLinks from 'components/Header/HeaderLinks';
-import Parallax from 'components/Parallax/Parallax';
-import Footer from 'components/Footer/Footer';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Button from 'components/CustomButtons/Button';
+import Header from 'Components/Header/Header'
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import Parallax from 'Components/Parallax/Parallax'
+import Footer from 'Components/Footer/Footer'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Button from 'Components/CustomButtons/Button'
 // sections for this page
-import SectionDescription from 'views/PresentationPage/Sections/SectionDescription';
-import SectionComponents from 'views/PresentationPage/Sections/SectionComponents';
-import SectionCards from 'views/PresentationPage/Sections/SectionCards';
-import SectionContent from 'views/PresentationPage/Sections/SectionContent';
-import SectionSections from 'views/PresentationPage/Sections/SectionSections';
-import SectionExamples from 'views/PresentationPage/Sections/SectionExamples';
-import SectionFreeDemo from 'views/PresentationPage/Sections/SectionFreeDemo';
-import SectionOverview from 'views/PresentationPage/Sections/SectionOverview';
-import SectionPricing from 'views/PresentationPage/Sections/SectionPricing';
+import SectionDescription from 'Views/PresentationPage/Sections/SectionDescription'
+import SectionComponents from 'Views/PresentationPage/Sections/SectionComponents'
+import SectionCards from 'Views/PresentationPage/Sections/SectionCards'
+import SectionContent from 'Views/PresentationPage/Sections/SectionContent'
+import SectionSections from 'Views/PresentationPage/Sections/SectionSections'
+import SectionExamples from 'Views/PresentationPage/Sections/SectionExamples'
+import SectionFreeDemo from 'Views/PresentationPage/Sections/SectionFreeDemo'
+import SectionOverview from 'Views/PresentationPage/Sections/SectionOverview'
+import SectionPricing from 'Views/PresentationPage/Sections/SectionPricing'
 
-import presentationStyle from 'assets/jss/material-kit-pro-react/views/presentationStyle';
+import presentationStyle from 'Assets/jss/material-kit-pro-react/views/presentationStyle'
 
 class PresentationPage extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div>
         <Header
@@ -41,7 +41,7 @@ class PresentationPage extends React.Component {
             color: 'info',
           }}
         />
-        <Parallax image={require('assets/img/bg4.jpg')} className={classes.parallax}>
+        <Parallax image={require('Assets/img/bg4.jpg')} className={classes.parallax}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
@@ -123,8 +123,8 @@ class PresentationPage extends React.Component {
           }
         />
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(presentationStyle)(PresentationPage);
+export default withStyles(presentationStyle)(PresentationPage)

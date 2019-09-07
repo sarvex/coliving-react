@@ -1,34 +1,34 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // @material-ui/core components
-import FormControl from '@material-ui/core/FormControl';
-import MenuItem from '@material-ui/core/MenuItem';
-import Select from '@material-ui/core/Select';
-import withStyles from '@material-ui/core/styles/withStyles';
+import FormControl from '@material-ui/core/FormControl'
+import MenuItem from '@material-ui/core/MenuItem'
+import Select from '@material-ui/core/Select'
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import CustomInput from 'components/CustomInput/CustomInput';
-import Button from 'components/CustomButtons/Button';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import CustomInput from 'Components/CustomInput/CustomInput'
+import Button from 'Components/CustomButtons/Button'
 
-import contactStyle from 'assets/jss/material-kit-pro-react/views/aboutUsSections/contactStyle';
+import contactStyle from 'Assets/jss/material-kit-pro-react/views/aboutUsSections/contactStyle'
 
 class SectionContact extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       specialitySelect: '1',
-    };
+    }
   }
 
   handleSpeciality = (event) => {
-    this.setState({ [event.target.name]: event.target.value });
-  };
+    this.setState({ [event.target.name]: event.target.value })
+  }
 
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classes.aboutUs}>
         <GridContainer>
@@ -117,8 +117,8 @@ class SectionContact extends React.Component {
           </GridItem>
         </GridContainer>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(contactStyle)(SectionContact);
+export default withStyles(contactStyle)(SectionContact)

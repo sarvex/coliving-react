@@ -1,36 +1,36 @@
-import React from 'react';
-import classNames from 'classnames';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import InfoArea from 'components/InfoArea/InfoArea';
-import Card from 'components/Card/Card';
-import CardHeader from 'components/Card/CardHeader';
-import CardBody from 'components/Card/CardBody';
-import Grid from '@material-ui/icons/GridOn';
-import PhoneLink from '@material-ui/icons/Phonelink';
-import AccessTime from '@material-ui/icons/AccessTime';
-import AttachMoney from '@material-ui/icons/AttachMoney';
-import withStyles from '@material-ui/core/styles/withStyles';
+import React from 'react'
+import classNames from 'classnames'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import InfoArea from 'Components/InfoArea/InfoArea'
+import Card from 'Components/Card/Card'
+import CardHeader from 'Components/Card/CardHeader'
+import CardBody from 'Components/Card/CardBody'
+import Grid from '@material-ui/icons/GridOn'
+import PhoneLink from '@material-ui/icons/Phonelink'
+import AccessTime from '@material-ui/icons/AccessTime'
+import AttachMoney from '@material-ui/icons/AttachMoney'
+import withStyles from '@material-ui/core/styles/withStyles'
 
-import Vodafone from 'assets/img/assets-for-demo/ourClients/vodafone.jpg';
-import Microsoft from 'assets/img/assets-for-demo/ourClients/microsoft.jpg';
-import Harvard from 'assets/img/assets-for-demo/ourClients/harvard.jpg';
-import Standford from 'assets/img/assets-for-demo/ourClients/stanford.jpg';
-import profilePic1 from 'assets/img/assets-for-demo/test1.jpg';
-import profilePic2 from 'assets/img/assets-for-demo/test2.jpg';
-import profilePic3 from 'assets/img/assets-for-demo/test3.jpg';
+import Vodafone from 'Assets/img/assets-for-demo/ourClients/vodafone.jpg'
+import Microsoft from 'Assets/img/assets-for-demo/ourClients/microsoft.jpg'
+import Harvard from 'Assets/img/assets-for-demo/ourClients/harvard.jpg'
+import Standford from 'Assets/img/assets-for-demo/ourClients/stanford.jpg'
+import profilePic1 from 'Assets/img/assets-for-demo/test1.jpg'
+import profilePic2 from 'Assets/img/assets-for-demo/test2.jpg'
+import profilePic3 from 'Assets/img/assets-for-demo/test3.jpg'
 
-import overviewStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/overviewStyle';
+import overviewStyle from 'Assets/jss/material-kit-pro-react/views/presentationSections/overviewStyle'
 
 class SectionOverview extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classes.section}>
         <div
           className={classes.features5}
           style={{
-            backgroundImage: `url(${require('assets/img/assets-for-demo/features-5.jpg')})`,
+            backgroundImage: `url(${require('Assets/img/assets-for-demo/features-5.jpg')})`,
           }}>
           <GridItem md={8} className={classNames(classes.mlAuto, classes.mrAuto)}>
             <h2 className={classes.title}>Your work will get much easier</h2>
@@ -235,8 +235,8 @@ class SectionOverview extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(overviewStyle)(SectionOverview);
+export default withStyles(overviewStyle)(SectionOverview)

@@ -1,70 +1,70 @@
-import React from 'react';
+import React from 'react'
 // react plugin for creating date-time-picker
-import Datetime from 'react-datetime';
+import Datetime from 'react-datetime'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import Slide from '@material-ui/core/Slide';
-import Dialog from '@material-ui/core/Dialog';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogActions from '@material-ui/core/DialogActions';
-import InputLabel from '@material-ui/core/InputLabel';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import FormControl from '@material-ui/core/FormControl';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Tooltip from '@material-ui/core/Tooltip';
-import Popover from '@material-ui/core/Popover';
-import Checkbox from '@material-ui/core/Checkbox';
-import Icon from '@material-ui/core/Icon';
+import withStyles from '@material-ui/core/styles/withStyles'
+import Slide from '@material-ui/core/Slide'
+import Dialog from '@material-ui/core/Dialog'
+import DialogTitle from '@material-ui/core/DialogTitle'
+import DialogContent from '@material-ui/core/DialogContent'
+import DialogActions from '@material-ui/core/DialogActions'
+import InputLabel from '@material-ui/core/InputLabel'
+import InputAdornment from '@material-ui/core/InputAdornment'
+import FormControl from '@material-ui/core/FormControl'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import Tooltip from '@material-ui/core/Tooltip'
+import Popover from '@material-ui/core/Popover'
+import Checkbox from '@material-ui/core/Checkbox'
+import Icon from '@material-ui/core/Icon'
 // @material-ui/icons
-import LibraryBooks from '@material-ui/icons/LibraryBooks';
-import Close from '@material-ui/icons/Close';
-import Notifications from '@material-ui/icons/Notifications';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import Assignment from '@material-ui/icons/Assignment';
-import Mail from '@material-ui/icons/Mail';
-import Face from '@material-ui/icons/Face';
-import Timeline from '@material-ui/icons/Timeline';
-import Code from '@material-ui/icons/Code';
-import Group from '@material-ui/icons/Group';
-import Email from '@material-ui/icons/Email';
-import Check from '@material-ui/icons/Check';
-import AttachFile from '@material-ui/icons/AttachFile';
-import Layers from '@material-ui/icons/Layers';
+import LibraryBooks from '@material-ui/icons/LibraryBooks'
+import Close from '@material-ui/icons/Close'
+import Notifications from '@material-ui/icons/Notifications'
+import AccountCircle from '@material-ui/icons/AccountCircle'
+import Assignment from '@material-ui/icons/Assignment'
+import Mail from '@material-ui/icons/Mail'
+import Face from '@material-ui/icons/Face'
+import Timeline from '@material-ui/icons/Timeline'
+import Code from '@material-ui/icons/Code'
+import Group from '@material-ui/icons/Group'
+import Email from '@material-ui/icons/Email'
+import Check from '@material-ui/icons/Check'
+import AttachFile from '@material-ui/icons/AttachFile'
+import Layers from '@material-ui/icons/Layers'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Button from 'components/CustomButtons/Button';
-import Instruction from 'components/Instruction/Instruction';
-import Card from 'components/Card/Card';
-import CardHeader from 'components/Card/CardHeader';
-import CardBody from 'components/Card/CardBody';
-import CustomInput from 'components/CustomInput/CustomInput';
-import CustomFileInput from 'components/CustomFileInput/CustomFileInput';
-import InfoArea from 'components/InfoArea/InfoArea';
-import Accordion from 'components/Accordion/Accordion';
-import ImageUpload from 'components/CustomUpload/ImageUpload';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Button from 'Components/CustomButtons/Button'
+import Instruction from 'Components/Instruction/Instruction'
+import Card from 'Components/Card/Card'
+import CardHeader from 'Components/Card/CardHeader'
+import CardBody from 'Components/Card/CardBody'
+import CustomInput from 'Components/CustomInput/CustomInput'
+import CustomFileInput from 'Components/CustomFileInput/CustomFileInput'
+import InfoArea from 'Components/InfoArea/InfoArea'
+import Accordion from 'Components/Accordion/Accordion'
+import ImageUpload from 'Components/CustomUpload/ImageUpload'
 
-import javascriptStyles from 'assets/jss/material-kit-pro-react/views/componentsSections/javascriptStyles';
+import javascriptStyles from 'Assets/jss/material-kit-pro-react/views/componentsSections/javascriptStyles'
 
-import dg1 from 'assets/img/dg1.jpg';
-import dg2 from 'assets/img/dg2.jpg';
+import dg1 from 'Assets/img/dg1.jpg'
+import dg2 from 'Assets/img/dg2.jpg'
 
 function Transition(props) {
-  return <Slide direction='down' {...props} />;
+  return <Slide direction='down' {...props} />
 }
 
 class SectionJavascript extends React.Component {
-  anchorElLeft = null;
+  anchorElLeft = null
 
-  anchorElTop = null;
+  anchorElTop = null
 
-  anchorElBottom = null;
+  anchorElBottom = null
 
-  anchorElRight = null;
+  anchorElRight = null
 
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       classicModal: false,
       noticeModal: false,
@@ -76,52 +76,52 @@ class SectionJavascript extends React.Component {
       openBottom: false,
       openRight: false,
       checked: [],
-    };
-    this.handleToggle = this.handleToggle.bind(this);
+    }
+    this.handleToggle = this.handleToggle.bind(this)
   }
 
   handleToggle(value) {
-    const { checked } = this.state;
-    const currentIndex = checked.indexOf(value);
-    const newChecked = [...checked];
+    const { checked } = this.state
+    const currentIndex = checked.indexOf(value)
+    const newChecked = [...checked]
 
     if (currentIndex === -1) {
-      newChecked.push(value);
+      newChecked.push(value)
     } else {
-      newChecked.splice(currentIndex, 1);
+      newChecked.splice(currentIndex, 1)
     }
 
     this.setState({
       checked: newChecked,
-    });
+    })
   }
 
   handleClickOpen(modal) {
-    const x = [];
-    x[modal] = true;
-    this.setState(x);
+    const x = []
+    x[modal] = true
+    this.setState(x)
   }
 
   handleClose(modal) {
-    const x = [];
-    x[modal] = false;
-    this.setState(x);
+    const x = []
+    x[modal] = false
+    this.setState(x)
   }
 
   handleClosePopover(state) {
     this.setState({
       [state]: false,
-    });
+    })
   }
 
   handleClickButton(state) {
     this.setState({
       [state]: true,
-    });
+    })
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={`${classes.section} cd-section`} id='javascriptComponents'>
         <div className={classes.container}>
@@ -600,7 +600,7 @@ class SectionJavascript extends React.Component {
               </div>
               <Button
                 buttonRef={(node) => {
-                  this.anchorElLeft = node;
+                  this.anchorElLeft = node
                 }}
                 onClick={() => this.handleClickButton('openLeft')}>
                 On left
@@ -629,7 +629,7 @@ class SectionJavascript extends React.Component {
               </Popover>
               <Button
                 buttonRef={(node) => {
-                  this.anchorElTop = node;
+                  this.anchorElTop = node
                 }}
                 onClick={() => this.handleClickButton('openTop')}>
                 On top
@@ -655,7 +655,7 @@ class SectionJavascript extends React.Component {
               </Popover>
               <Button
                 buttonRef={(node) => {
-                  this.anchorElBottom = node;
+                  this.anchorElBottom = node
                 }}
                 onClick={() => this.handleClickButton('openBottom')}>
                 On bottom
@@ -681,7 +681,7 @@ class SectionJavascript extends React.Component {
               </Popover>
               <Button
                 buttonRef={(node) => {
-                  this.anchorElRight = node;
+                  this.anchorElRight = node
                 }}
                 onClick={() => this.handleClickButton('openRight')}>
                 On right
@@ -842,8 +842,8 @@ class SectionJavascript extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(javascriptStyles)(SectionJavascript);
+export default withStyles(javascriptStyles)(SectionJavascript)

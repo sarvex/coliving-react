@@ -1,25 +1,25 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import Tooltip from '@material-ui/core/Tooltip';
+import withStyles from '@material-ui/core/styles/withStyles'
+import Tooltip from '@material-ui/core/Tooltip'
 // @material-ui/icons
-import FormatAlignLeft from '@material-ui/icons/FormatAlignLeft';
+import FormatAlignLeft from '@material-ui/icons/FormatAlignLeft'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import NavPills from 'components/NavPills/NavPills';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import Button from 'components/CustomButtons/Button';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import NavPills from 'Components/NavPills/NavPills'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import Button from 'Components/CustomButtons/Button'
 
-import office2 from 'assets/img/examples/office2.jpg';
-import blog8 from 'assets/img/examples/blog8.jpg';
-import cardProject6 from 'assets/img/examples/card-project6.jpg';
+import office2 from 'Assets/img/examples/office2.jpg'
+import blog8 from 'Assets/img/examples/blog8.jpg'
+import cardProject6 from 'Assets/img/examples/card-project6.jpg'
 
-import sectionPillsStyle from 'assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle';
+import sectionPillsStyle from 'Assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle'
 
 function SectionPills({ ...props }) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.section}>
       <GridContainer justify='center'>
@@ -115,7 +115,7 @@ function SectionPills({ ...props }) {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-export default withStyles(sectionPillsStyle)(SectionPills);
+export default withStyles(sectionPillsStyle)(SectionPills)

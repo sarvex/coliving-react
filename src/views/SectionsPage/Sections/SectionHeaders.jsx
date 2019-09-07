@@ -1,34 +1,34 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // react component for creating beautiful carousel
-import Carousel from 'react-slick';
+import Carousel from 'react-slick'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
-import Share from '@material-ui/icons/Share';
-import ShoppingCart from '@material-ui/icons/ShoppingCart';
+import Share from '@material-ui/icons/Share'
+import ShoppingCart from '@material-ui/icons/ShoppingCart'
 // core components
-import Header from 'components/Header/Header';
-import Button from 'components/CustomButtons/Button';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import CustomInput from 'components/CustomInput/CustomInput';
+import Header from 'Components/Header/Header'
+import Button from 'Components/CustomButtons/Button'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import CustomInput from 'Components/CustomInput/CustomInput'
 
-import headersStyle from 'assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle';
+import headersStyle from 'Assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle'
 
-import bg12 from 'assets/img/bg12.jpg';
-import office2 from 'assets/img/examples/office2.jpg';
-import dg1 from 'assets/img/dg1.jpg';
-import dg2 from 'assets/img/dg2.jpg';
-import dg3 from 'assets/img/dg3.jpg';
+import bg12 from 'Assets/img/bg12.jpg'
+import office2 from 'Assets/img/examples/office2.jpg'
+import dg1 from 'Assets/img/dg1.jpg'
+import dg2 from 'Assets/img/dg2.jpg'
+import dg3 from 'Assets/img/dg3.jpg'
 
 function SectionHeaders({ ...props }) {
-  const { classes, ...rest } = props;
+  const { classes, ...rest } = props
   const settings = {
     dots: true,
     infinite: true,
@@ -36,7 +36,7 @@ function SectionHeaders({ ...props }) {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-  };
+  }
   return (
     // we've set the className to cd-section so we can make smooth scroll to it
     <div className='cd-section' {...rest}>
@@ -453,7 +453,7 @@ function SectionHeaders({ ...props }) {
       </div>
       {/* HEADER 3 END */}
     </div>
-  );
+  )
 }
 
-export default withStyles(headersStyle)(SectionHeaders);
+export default withStyles(headersStyle)(SectionHeaders)

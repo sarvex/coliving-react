@@ -1,26 +1,26 @@
-import React from 'react';
-import classNames from 'classnames';
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import Favorite from '@material-ui/icons/Favorite';
-import Header from 'components/Header/Header';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Parallax from 'components/Parallax/Parallax';
-import Footer from 'components/Footer/Footer';
-import HeaderLinks from 'components/Header/HeaderLinks';
+import React from 'react'
+import classNames from 'classnames'
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import Favorite from '@material-ui/icons/Favorite'
+import Header from 'Components/Header/Header'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Parallax from 'Components/Parallax/Parallax'
+import Footer from 'Components/Footer/Footer'
+import HeaderLinks from 'Components/Header/HeaderLinks'
 
-import aboutUsStyle from 'assets/jss/material-kit-pro-react/views/aboutUsStyle';
-import background from 'assets/img/bg9.jpg';
-import SectionDescription from './Sections/SectionDescription';
-import SectionTeam from './Sections/SectionTeam';
-import SectionServices from './Sections/SectionServices';
-import SectionOffice from './Sections/SectionOffice';
-import SectionContact from './Sections/SectionContact';
+import aboutUsStyle from 'Assets/jss/material-kit-pro-react/views/aboutUsStyle'
+import background from 'Assets/img/bg9.jpg'
+import SectionDescription from './Sections/SectionDescription'
+import SectionTeam from './Sections/SectionTeam'
+import SectionServices from './Sections/SectionServices'
+import SectionOffice from './Sections/SectionOffice'
+import SectionContact from './Sections/SectionContact'
 
 const AboutUsPage = (props) => {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div>
       <Header
@@ -87,7 +87,7 @@ const AboutUsPage = (props) => {
         }
       />
     </div>
-  );
-};
+  )
+}
 
-export default withStyles(aboutUsStyle)(AboutUsPage);
+export default withStyles(aboutUsStyle)(AboutUsPage)

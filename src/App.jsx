@@ -1,10 +1,10 @@
-import React from 'react';
-import Router from './Router';
-import './App.scss';
-import 'assets/scss/material-kit-pro-react.scss';
+import React from 'react'
+import Router from './Router'
+import './App.scss'
+import 'Assets/scss/material-kit-pro-react.scss'
 
 const App = () => {
-  return <Router />;
-};
+  return <Router />
+}
 
-export default App;
+export default App

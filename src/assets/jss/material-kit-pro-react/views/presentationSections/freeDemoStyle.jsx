@@ -12,7 +12,7 @@ import {
   blackColor,
   grayColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const freeDemoStyle = {
   container,
@@ -79,6 +79,6 @@ const freeDemoStyle = {
   successColor: {
     color: successColor[0],
   },
-};
+}
 
-export default freeDemoStyle;
+export default freeDemoStyle

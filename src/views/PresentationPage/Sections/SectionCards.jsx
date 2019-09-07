@@ -1,16 +1,14 @@
-import React from 'react';
-import classNames from 'classnames';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import withStyles from '@material-ui/core/styles/withStyles';
-
-import cardsStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/cardsStyle';
-
-import cardsTest from 'assets/img/assets-for-demo/cards-test.png';
+import React from 'react'
+import classNames from 'classnames'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import withStyles from '@material-ui/core/styles/withStyles'
+import cardsStyle from 'Assets/jss/material-kit-pro-react/views/presentationSections/cardsStyle'
+import cardsTest from 'Assets/img/assets-for-demo/cards-test.png'
 
 class SectionCards extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classNames(classes.section, classes.sectionDark)}>
         <div className={classes.container}>
@@ -35,8 +33,8 @@ class SectionCards extends React.Component {
           </GridContainer>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(cardsStyle)(SectionCards);
+export default withStyles(cardsStyle)(SectionCards)

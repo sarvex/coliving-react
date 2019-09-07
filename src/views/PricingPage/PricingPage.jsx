@@ -1,28 +1,28 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite';
+import Favorite from '@material-ui/icons/Favorite'
 // core components
-import Header from 'components/Header/Header';
-import HeaderLinks from 'components/Header/HeaderLinks';
-import Parallax from 'components/Parallax/Parallax';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Footer from 'components/Footer/Footer';
+import Header from 'Components/Header/Header'
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import Parallax from 'Components/Parallax/Parallax'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Footer from 'Components/Footer/Footer'
 // sections for this page
-import SectionPricing from 'views/PricingPage/Sections/SectionPricing';
-import SectionFeatures from 'views/PricingPage/Sections/SectionFeatures';
+import SectionPricing from 'Views/PricingPage/Sections/SectionPricing'
+import SectionFeatures from 'Views/PricingPage/Sections/SectionFeatures'
 
-import pricingStyle from 'assets/jss/material-kit-pro-react/views/pricingStyle';
+import pricingStyle from 'Assets/jss/material-kit-pro-react/views/pricingStyle'
 
 class PricingPage extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div>
         <Header
@@ -36,7 +36,7 @@ class PricingPage extends React.Component {
           }}
         />
 
-        <Parallax image={require('assets/img/bg2.jpg')} filter='dark' small>
+        <Parallax image={require('Assets/img/bg2.jpg')} filter='dark' small>
           <div className={classes.container}>
             <GridContainer>
               <GridItem md={8} sm={8} className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}>
@@ -91,8 +91,8 @@ class PricingPage extends React.Component {
           }
         />
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(pricingStyle)(PricingPage);
+export default withStyles(pricingStyle)(PricingPage)

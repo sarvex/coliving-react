@@ -8,7 +8,7 @@ import {
   mrAuto,
   blackColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const sectionStyle = {
   sectionSections: {
@@ -20,7 +20,7 @@ const sectionStyle = {
       width: '100%',
       borderRadius: '3px',
       boxShadow: `0 8px 10px 1px rgba(${hexToRgb(blackColor)},0.14), 0 3px 14px 2px rgba(${hexToRgb(
-        blackColor,
+        blackColor
       )},0.12), 0 5px 5px -3px rgba(${hexToRgb(blackColor)},0.2)`,
       transition: 'all .2s cubic-bezier(0.4,0,0.2,1)',
       '&:hover': {
@@ -41,6 +41,6 @@ const sectionStyle = {
   photoGallery: {
     padding: '7.5px',
   },
-};
+}
 
-export default sectionStyle;
+export default sectionStyle

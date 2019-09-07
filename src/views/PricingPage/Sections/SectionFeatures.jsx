@@ -1,17 +1,17 @@
-import React from 'react';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import InfoArea from 'components/InfoArea/InfoArea';
-import withStyles from '@material-ui/core/styles/withStyles';
-import CardMembership from '@material-ui/icons/CardMembership';
-import CardGiftCard from '@material-ui/icons/CardGiftcard';
-import AttachMoney from '@material-ui/icons/AttachMoney';
-import QuestionAnswer from '@material-ui/icons/QuestionAnswer';
+import React from 'react'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import InfoArea from 'Components/InfoArea/InfoArea'
+import withStyles from '@material-ui/core/styles/withStyles'
+import CardMembership from '@material-ui/icons/CardMembership'
+import CardGiftCard from '@material-ui/icons/CardGiftcard'
+import AttachMoney from '@material-ui/icons/AttachMoney'
+import QuestionAnswer from '@material-ui/icons/QuestionAnswer'
 
-import featuresStyle from 'assets/jss/material-kit-pro-react/views/pricingSections/featuresStyle';
+import featuresStyle from 'Assets/jss/material-kit-pro-react/views/pricingSections/featuresStyle'
 
 function SectionFeatures(props) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.featuresSection}>
       <div className={classes.textCenter}>
@@ -54,7 +54,7 @@ function SectionFeatures(props) {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-export default withStyles(featuresStyle)(SectionFeatures);
+export default withStyles(featuresStyle)(SectionFeatures)

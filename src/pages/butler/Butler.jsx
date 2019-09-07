@@ -1,28 +1,28 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // react components used to create a google map
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite';
-import PinDrop from '@material-ui/icons/PinDrop';
-import Phone from '@material-ui/icons/Phone';
-import BusinessCenter from '@material-ui/icons/BusinessCenter';
+import Favorite from '@material-ui/icons/Favorite'
+import PinDrop from '@material-ui/icons/PinDrop'
+import Phone from '@material-ui/icons/Phone'
+import BusinessCenter from '@material-ui/icons/BusinessCenter'
 // core components
-import Header from 'components/Header/Header';
-import HeaderLinks from 'components/Header/HeaderLinks';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import InfoArea from 'components/InfoArea/InfoArea';
-import CustomInput from 'components/CustomInput/CustomInput';
-import Button from 'components/CustomButtons/Button';
-import Footer from 'components/Footer/Footer';
+import Header from 'Components/Header/Header'
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import InfoArea from 'Components/InfoArea/InfoArea'
+import CustomInput from 'Components/CustomInput/CustomInput'
+import Button from 'Components/CustomButtons/Button'
+import Footer from 'Components/Footer/Footer'
 
-import contactUsStyle from 'assets/jss/material-kit-pro-react/views/contactUsStyle';
+import contactUsStyle from 'Assets/jss/material-kit-pro-react/views/contactUsStyle'
 
 const CustomSkinMap = withScriptjs(
   withGoogleMap((props) => (
@@ -87,11 +87,11 @@ const CustomSkinMap = withScriptjs(
       }}>
       <Marker position={{ lat: 44.43353, lng: 26.093928 }} />
     </GoogleMap>
-  )),
-);
+  ))
+)
 
 const Butler = (props) => {
-  const { classes } = this.props;
+  const { classes } = this.props
   return (
     <div>
       <Header brand='Material Kit PRO React' links={<HeaderLinks dropdownHoverColor='dark' />} fixed color='dark' />
@@ -238,7 +238,7 @@ const Butler = (props) => {
         }
       />
     </div>
-  );
-};
+  )
+}
 
-export default withStyles(contactUsStyle)(Butler);
+export default withStyles(contactUsStyle)(Butler)

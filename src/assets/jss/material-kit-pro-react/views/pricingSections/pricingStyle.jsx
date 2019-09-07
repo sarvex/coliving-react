@@ -1,4 +1,4 @@
-import { mrAuto, mlAuto, cardTitle, whiteColor, infoColor, hexToRgb } from 'assets/jss/material-kit-pro-react';
+import { mrAuto, mlAuto, cardTitle, whiteColor, infoColor, hexToRgb } from 'Assets/jss/material-kit-pro-react'
 
 const pricingStyle = {
   mrAuto,
@@ -20,6 +20,6 @@ const pricingStyle = {
   textInfo: {
     color: `${infoColor[0]} !important`,
   },
-};
+}
 
-export default pricingStyle;
+export default pricingStyle

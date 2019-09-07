@@ -1,20 +1,20 @@
-import React from 'react';
+import React from 'react'
 
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 
 // @material-ui/icons
-import Face from '@material-ui/icons/Face';
-import Chat from '@material-ui/icons/Chat';
-import Build from '@material-ui/icons/Build';
+import Face from '@material-ui/icons/Face'
+import Chat from '@material-ui/icons/Chat'
+import Build from '@material-ui/icons/Build'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import CustomTabs from 'components/CustomTabs/CustomTabs';
-import tabsStyle from 'assets/jss/material-kit-pro-react/views/componentsSections/tabsStyle';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import CustomTabs from 'Components/CustomTabs/CustomTabs'
+import tabsStyle from 'Assets/jss/material-kit-pro-react/views/componentsSections/tabsStyle'
 
 const SectionTabs = (props) => {
-  const { classes } = this.props;
+  const { classes } = this.props
   return (
     <div className={classes.section}>
       <div className={classes.container}>
@@ -121,7 +121,7 @@ const SectionTabs = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default withStyles(tabsStyle)(SectionTabs);
+export default withStyles(tabsStyle)(SectionTabs)

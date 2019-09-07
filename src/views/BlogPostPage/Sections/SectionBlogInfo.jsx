@@ -1,22 +1,22 @@
-import React from 'react';
+import React from 'react'
 
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Badge from 'components/Badge/Badge';
-import Button from 'components/CustomButtons/Button';
-import Card from 'components/Card/Card';
-import CardAvatar from 'components/Card/CardAvatar';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Badge from 'Components/Badge/Badge'
+import Button from 'Components/CustomButtons/Button'
+import Card from 'Components/Card/Card'
+import CardAvatar from 'Components/Card/CardAvatar'
 
-import profileImage from 'assets/img/faces/card-profile1-square.jpg';
+import profileImage from 'Assets/img/faces/card-profile1-square.jpg'
 
-import sectionBlogInfoStyle from 'assets/jss/material-kit-pro-react/views/blogPostSections/sectionBlogInfoStyle';
+import sectionBlogInfoStyle from 'Assets/jss/material-kit-pro-react/views/blogPostSections/sectionBlogInfoStyle'
 
 function SectionBlogInfo({ ...props }) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.section}>
       <GridContainer justify='center'>
@@ -67,7 +67,7 @@ function SectionBlogInfo({ ...props }) {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-export default withStyles(sectionBlogInfoStyle)(SectionBlogInfo);
+export default withStyles(sectionBlogInfoStyle)(SectionBlogInfo)

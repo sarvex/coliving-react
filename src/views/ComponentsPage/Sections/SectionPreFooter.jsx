@@ -1,25 +1,25 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Button from 'components/CustomButtons/Button';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import CustomInput from 'components/CustomInput/CustomInput';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Button from 'Components/CustomButtons/Button'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import CustomInput from 'Components/CustomInput/CustomInput'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import InputAdornment from '@material-ui/core/InputAdornment';
+import withStyles from '@material-ui/core/styles/withStyles'
+import InputAdornment from '@material-ui/core/InputAdornment'
 // @material-ui icons
-import Mail from '@material-ui/icons/Mail';
+import Mail from '@material-ui/icons/Mail'
 
-import bg7 from 'assets/img/bg7.jpg';
+import bg7 from 'Assets/img/bg7.jpg'
 
-import styles from 'assets/jss/material-kit-pro-react/views/componentsSections/preFooter';
+import styles from 'Assets/jss/material-kit-pro-react/views/componentsSections/preFooter'
 
 const SectionPreFooter = (props) => {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div>
       <div className={classes.container}>
@@ -219,7 +219,7 @@ const SectionPreFooter = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default withStyles(styles)(SectionPreFooter);
+export default withStyles(styles)(SectionPreFooter)

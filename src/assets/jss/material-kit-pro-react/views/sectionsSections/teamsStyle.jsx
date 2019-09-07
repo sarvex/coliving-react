@@ -11,7 +11,7 @@ import {
   blackColor,
   whiteColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const teamsSection = {
   container,
@@ -82,6 +82,6 @@ const teamsSection = {
       color: whiteColor,
     },
   },
-};
+}
 
-export default teamsSection;
+export default teamsSection

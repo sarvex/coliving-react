@@ -1,22 +1,22 @@
-import React from 'react';
+import React from 'react'
 // react component for creating beautiful carousel
-import Carousel from 'react-slick';
+import Carousel from 'react-slick'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
-import LocationOn from '@material-ui/icons/LocationOn';
+import LocationOn from '@material-ui/icons/LocationOn'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import carouselStyle from 'assets/jss/material-kit-pro-react/views/componentsSections/carouselStyle';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import carouselStyle from 'Assets/jss/material-kit-pro-react/views/componentsSections/carouselStyle'
 
-import image1 from 'assets/img/bg0.jpg';
-import image2 from 'assets/img/bg2.jpg';
-import image3 from 'assets/img/bg3.jpg';
+import image1 from 'Assets/img/bg0.jpg'
+import image2 from 'Assets/img/bg2.jpg'
+import image3 from 'Assets/img/bg3.jpg'
 
 const SectionCarousel = (props) => {
-  const { classes } = props;
+  const { classes } = props
   const settings = {
     dots: true,
     infinite: true,
@@ -24,7 +24,7 @@ const SectionCarousel = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-  };
+  }
   return (
     <div className={classes.section} id='carousel'>
       <div className={classes.container}>
@@ -65,7 +65,7 @@ const SectionCarousel = (props) => {
         </GridContainer>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default withStyles(carouselStyle)(SectionCarousel);
+export default withStyles(carouselStyle)(SectionCarousel)

@@ -1,28 +1,28 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite';
+import Favorite from '@material-ui/icons/Favorite'
 // core components
-import Header from 'components/Header/Header';
-import HeaderLinks from 'components/Header/HeaderLinks';
-import Footer from 'components/Footer/Footer';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Parallax from 'components/Parallax/Parallax';
+import Header from 'Components/Header/Header'
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import Footer from 'Components/Footer/Footer'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Parallax from 'Components/Parallax/Parallax'
 // sections for this page
-import blogPostsPageStyle from 'assets/jss/material-kit-pro-react/views/blogPostsPageStyle';
-import background from 'assets/img/bg10.jpg';
-import SectionPills from './Sections/SectionPills';
-import SectionInterested from './Sections/SectionInterested';
-import SectionImage from './Sections/SectionImage';
-import SubscribeLine from './Sections/SubscribeLine';
+import blogPostsPageStyle from 'Assets/jss/material-kit-pro-react/views/blogPostsPageStyle'
+import background from 'Assets/img/bg10.jpg'
+import SectionPills from './Sections/SectionPills'
+import SectionInterested from './Sections/SectionInterested'
+import SectionImage from './Sections/SectionImage'
+import SubscribeLine from './Sections/SubscribeLine'
 
 class BlogPostsPage extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div>
         <Header
@@ -87,8 +87,8 @@ class BlogPostsPage extends React.Component {
           }
         />
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(blogPostsPageStyle)(BlogPostsPage);
+export default withStyles(blogPostsPageStyle)(BlogPostsPage)

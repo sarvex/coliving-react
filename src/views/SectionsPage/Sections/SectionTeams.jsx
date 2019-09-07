@@ -1,37 +1,37 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
 // import  from "@material-ui/icons/";
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardAvatar from 'components/Card/CardAvatar';
-import CardHeader from 'components/Card/CardHeader';
-import CardBody from 'components/Card/CardBody';
-import CardFooter from 'components/Card/CardFooter';
-import Button from 'components/CustomButtons/Button';
-import Muted from 'components/Typography/Muted';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardAvatar from 'Components/Card/CardAvatar'
+import CardHeader from 'Components/Card/CardHeader'
+import CardBody from 'Components/Card/CardBody'
+import CardFooter from 'Components/Card/CardFooter'
+import Button from 'Components/CustomButtons/Button'
+import Muted from 'Components/Typography/Muted'
 
-import teamsStyle from 'assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle';
+import teamsStyle from 'Assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle'
 
-import bg7 from 'assets/img/bg7.jpg';
-import city from 'assets/img/examples/city.jpg';
-import marc from 'assets/img/faces/marc.jpg';
-import christian from 'assets/img/faces/christian.jpg';
-import kendall from 'assets/img/faces/kendall.jpg';
-import avatar from 'assets/img/faces/avatar.jpg';
-import cardProfile1 from 'assets/img/examples/card-profile1.jpg';
-import cardProfile2 from 'assets/img/examples/card-profile2.jpg';
-import cardProfile4 from 'assets/img/examples/card-profile4.jpg';
-import cardProfile1Square from 'assets/img/faces/card-profile1-square.jpg';
-import cardProfile2Square from 'assets/img/faces/card-profile2-square.jpg';
-import cardProfile4Square from 'assets/img/faces/card-profile4-square.jpg';
-import cardProfile6Square from 'assets/img/faces/card-profile6-square.jpg';
+import bg7 from 'Assets/img/bg7.jpg'
+import city from 'Assets/img/examples/city.jpg'
+import marc from 'Assets/img/faces/marc.jpg'
+import christian from 'Assets/img/faces/christian.jpg'
+import kendall from 'Assets/img/faces/kendall.jpg'
+import avatar from 'Assets/img/faces/avatar.jpg'
+import cardProfile1 from 'Assets/img/examples/card-profile1.jpg'
+import cardProfile2 from 'Assets/img/examples/card-profile2.jpg'
+import cardProfile4 from 'Assets/img/examples/card-profile4.jpg'
+import cardProfile1Square from 'Assets/img/faces/card-profile1-square.jpg'
+import cardProfile2Square from 'Assets/img/faces/card-profile2-square.jpg'
+import cardProfile4Square from 'Assets/img/faces/card-profile4-square.jpg'
+import cardProfile6Square from 'Assets/img/faces/card-profile6-square.jpg'
 
 function SectionTeams({ ...props }) {
-  const { classes, ...rest } = props;
+  const { classes, ...rest } = props
   return (
     <div className='cd-section' {...rest}>
       {/* Team 1 START */}
@@ -798,7 +798,7 @@ function SectionTeams({ ...props }) {
       </div>
       {/* Team 5 END */}
     </div>
-  );
+  )
 }
 
-export default withStyles(teamsStyle)(SectionTeams);
+export default withStyles(teamsStyle)(SectionTeams)

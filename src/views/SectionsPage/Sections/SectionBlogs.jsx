@@ -1,31 +1,31 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
-import TrendingUp from '@material-ui/icons/TrendingUp';
+import TrendingUp from '@material-ui/icons/TrendingUp'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import CardHeader from 'components/Card/CardHeader';
-import Info from 'components/Typography/Info';
-import Danger from 'components/Typography/Danger';
-import Success from 'components/Typography/Success';
-import Button from 'components/CustomButtons/Button';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import CardHeader from 'Components/Card/CardHeader'
+import Info from 'Components/Typography/Info'
+import Danger from 'Components/Typography/Danger'
+import Success from 'Components/Typography/Success'
+import Button from 'Components/CustomButtons/Button'
 
-import blogsStyle from 'assets/jss/material-kit-pro-react/views/sectionsSections/blogsStyle';
+import blogsStyle from 'Assets/jss/material-kit-pro-react/views/sectionsSections/blogsStyle'
 
-import cardBlog4 from 'assets/img/examples/card-blog4.jpg';
-import office2 from 'assets/img/office2.jpg';
-import blog5 from 'assets/img/examples/blog5.jpg';
-import blog6 from 'assets/img/examples/blog6.jpg';
-import blog7 from 'assets/img/examples/blog7.jpg';
-import blog8 from 'assets/img/examples/blog8.jpg';
-import bg5 from 'assets/img/bg5.jpg';
+import cardBlog4 from 'Assets/img/examples/card-blog4.jpg'
+import office2 from 'Assets/img/office2.jpg'
+import blog5 from 'Assets/img/examples/blog5.jpg'
+import blog6 from 'Assets/img/examples/blog6.jpg'
+import blog7 from 'Assets/img/examples/blog7.jpg'
+import blog8 from 'Assets/img/examples/blog8.jpg'
+import bg5 from 'Assets/img/bg5.jpg'
 
 function SectionBlogs({ ...props }) {
-  const { classes, ...rest } = props;
+  const { classes, ...rest } = props
   return (
     <div className='cd-section' {...rest}>
       {/* Blogs 1 START */}
@@ -485,7 +485,7 @@ function SectionBlogs({ ...props }) {
       </div>
       {/* Blogs 4 END */}
     </div>
-  );
+  )
 }
 
-export default withStyles(blogsStyle)(SectionBlogs);
+export default withStyles(blogsStyle)(SectionBlogs)

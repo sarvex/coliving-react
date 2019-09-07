@@ -1,5 +1,5 @@
-import React from 'react';
-import HeaderLinks from 'components/Header/HeaderLinks';
+import React from 'react'
+import HeaderLinks from 'Components/Header/HeaderLinks'
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
         color: 'primary',
       }}
     />
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

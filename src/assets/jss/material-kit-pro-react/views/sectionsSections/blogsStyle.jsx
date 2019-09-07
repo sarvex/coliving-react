@@ -7,7 +7,7 @@ import {
   mlAuto,
   mrAuto,
   grayColor,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const blogsSection = {
   container,
@@ -46,6 +46,6 @@ const blogsSection = {
     marginBottom: '60px',
     textAlign: 'center',
   },
-};
+}
 
-export default blogsSection;
+export default blogsSection

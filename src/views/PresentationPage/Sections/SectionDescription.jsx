@@ -1,19 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import InfoArea from 'components/InfoArea/InfoArea';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import InfoArea from 'Components/InfoArea/InfoArea'
 
-import Apps from '@material-ui/icons/Apps';
-import ViewDay from '@material-ui/icons/ViewDay';
-import ViewCarousel from '@material-ui/icons/ViewCarousel';
-import withStyles from '@material-ui/core/styles/withStyles';
+import Apps from '@material-ui/icons/Apps'
+import ViewDay from '@material-ui/icons/ViewDay'
+import ViewCarousel from '@material-ui/icons/ViewCarousel'
+import withStyles from '@material-ui/core/styles/withStyles'
 
-import descriptionStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/descriptionStyle';
+import descriptionStyle from 'Assets/jss/material-kit-pro-react/views/presentationSections/descriptionStyle'
 
 class SectionDescription extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classes.section}>
         <div className={classes.container}>
@@ -59,8 +59,8 @@ class SectionDescription extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(descriptionStyle)(SectionDescription);
+export default withStyles(descriptionStyle)(SectionDescription)

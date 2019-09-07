@@ -1,20 +1,20 @@
-import React from 'react';
-import classNames from 'classnames';
-import withStyles from '@material-ui/core/styles/withStyles';
-import Close from '@material-ui/icons/Close';
-import Check from '@material-ui/icons/Check';
+import React from 'react'
+import classNames from 'classnames'
+import withStyles from '@material-ui/core/styles/withStyles'
+import Close from '@material-ui/icons/Close'
+import Check from '@material-ui/icons/Check'
 
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import Button from 'components/CustomButtons/Button';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import Button from 'Components/CustomButtons/Button'
 
-import freeDemoStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/freeDemoStyle';
+import freeDemoStyle from 'Assets/jss/material-kit-pro-react/views/presentationSections/freeDemoStyle'
 
 class SectionFreeDemo extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classes.section}>
         <div className={classes.container}>
@@ -98,8 +98,8 @@ class SectionFreeDemo extends React.Component {
           </GridContainer>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(freeDemoStyle)(SectionFreeDemo);
+export default withStyles(freeDemoStyle)(SectionFreeDemo)

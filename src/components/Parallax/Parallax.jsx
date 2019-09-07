@@ -1,60 +1,60 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // nodejs library to set properties for components
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 
 // core components
-import parallaxStyle from 'assets/jss/material-kit-pro-react/components/parallaxStyle';
+import parallaxStyle from 'Assets/jss/material-kit-pro-react/components/parallaxStyle'
 
 class Parallax extends React.Component {
   constructor(props) {
-    super(props);
-    let windowScrollTop;
+    super(props)
+    let windowScrollTop
     if (window.innerWidth >= 768) {
-      windowScrollTop = window.pageYOffset / 3;
+      windowScrollTop = window.pageYOffset / 3
     } else {
-      windowScrollTop = 0;
+      windowScrollTop = 0
     }
     this.state = {
       transform: `translate3d(0,${windowScrollTop}px,0)`,
-    };
-    this.resetTransform = this.resetTransform.bind(this);
+    }
+    this.resetTransform = this.resetTransform.bind(this)
   }
 
   componentDidMount() {
     if (window.innerWidth >= 768) {
-      const windowScrollTop = window.pageYOffset / 3;
+      const windowScrollTop = window.pageYOffset / 3
       this.setState({
         transform: `translate3d(0,${windowScrollTop}px,0)`,
-      });
-      window.addEventListener('scroll', this.resetTransform);
+      })
+      window.addEventListener('scroll', this.resetTransform)
     }
   }
 
   componentWillUnmount() {
     if (window.innerWidth >= 768) {
-      window.removeEventListener('scroll', this.resetTransform);
+      window.removeEventListener('scroll', this.resetTransform)
     }
   }
 
   resetTransform() {
-    const windowScrollTop = window.pageYOffset / 3;
+    const windowScrollTop = window.pageYOffset / 3
     this.setState({
       transform: `translate3d(0,${windowScrollTop}px,0)`,
-    });
+    })
   }
 
   render() {
-    const { classes, filter, className, children, style, image, small } = this.props;
+    const { classes, filter, className, children, style, image, small } = this.props
     const parallaxClasses = classNames({
       [classes.parallax]: true,
       [classes[`${filter}Color`]]: filter !== undefined,
       [classes.small]: small,
       [className]: className !== undefined,
-    });
+    })
     return (
       <div
         className={parallaxClasses}
@@ -66,7 +66,7 @@ class Parallax extends React.Component {
         ref='parallax'>
         {children}
       </div>
-    );
+    )
   }
 }
 
@@ -78,6 +78,6 @@ Parallax.propTypes = {
   style: PropTypes.string,
   image: PropTypes.string,
   small: PropTypes.bool,
-};
+}
 
-export default withStyles(parallaxStyle)(Parallax);
+export default withStyles(parallaxStyle)(Parallax)

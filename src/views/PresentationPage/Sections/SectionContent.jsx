@@ -1,18 +1,18 @@
-import React from 'react';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import withStyles from '@material-ui/core/styles/withStyles';
-import ScrollAnimation from 'react-animate-on-scroll';
-import 'animate.css/animate.min.css';
+import React from 'react'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import withStyles from '@material-ui/core/styles/withStyles'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.min.css'
 
-import contentStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/contentStyle';
-import presentationiPad from 'assets/img/assets-for-demo/presentationViewSectionComponent/presentation-ipad.jpg';
-import presentationiPadComments from 'assets/img/assets-for-demo/presentationViewSectionComponent/ipad-comments.jpg';
-import presentationiPadTable from 'assets/img/assets-for-demo/presentationViewSectionComponent/ipad-table.jpg';
+import contentStyle from 'Assets/jss/material-kit-pro-react/views/presentationSections/contentStyle'
+import presentationiPad from 'Assets/img/assets-for-demo/presentationViewSectionComponent/presentation-ipad.jpg'
+import presentationiPadComments from 'Assets/img/assets-for-demo/presentationViewSectionComponent/ipad-comments.jpg'
+import presentationiPadTable from 'Assets/img/assets-for-demo/presentationViewSectionComponent/ipad-table.jpg'
 
 class SectionContent extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classes.section}>
         <div className={classes.container}>
@@ -46,8 +46,8 @@ class SectionContent extends React.Component {
           </GridContainer>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(contentStyle)(SectionContent);
+export default withStyles(contentStyle)(SectionContent)

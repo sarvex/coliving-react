@@ -12,7 +12,7 @@ import {
   whiteColor,
   grayColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const pricingSection = {
   container,
@@ -119,6 +119,6 @@ const pricingSection = {
   marginBottom30: {
     marginBottom: '30px',
   },
-};
+}
 
-export default pricingSection;
+export default pricingSection

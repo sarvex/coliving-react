@@ -1,39 +1,39 @@
-import React from 'react';
+import React from 'react'
 // plugin that creates slider
-import nouislider from 'nouislider';
+import nouislider from 'nouislider'
 // react component plugin for creating beatiful tags on an input
-import TagsInput from 'react-tagsinput';
+import TagsInput from 'react-tagsinput'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import Checkbox from '@material-ui/core/Checkbox';
-import Radio from '@material-ui/core/Radio';
-import Switch from '@material-ui/core/Switch';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
-import InputLabel from '@material-ui/core/InputLabel';
+import withStyles from '@material-ui/core/styles/withStyles'
+import InputAdornment from '@material-ui/core/InputAdornment'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import FormControl from '@material-ui/core/FormControl'
+import Checkbox from '@material-ui/core/Checkbox'
+import Radio from '@material-ui/core/Radio'
+import Switch from '@material-ui/core/Switch'
+import Select from '@material-ui/core/Select'
+import MenuItem from '@material-ui/core/MenuItem'
+import InputLabel from '@material-ui/core/InputLabel'
 // @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite';
-import People from '@material-ui/icons/People';
-import Check from '@material-ui/icons/Check';
-import FiberManualRecord from '@material-ui/icons/FiberManualRecord';
+import Favorite from '@material-ui/icons/Favorite'
+import People from '@material-ui/icons/People'
+import Check from '@material-ui/icons/Check'
+import FiberManualRecord from '@material-ui/icons/FiberManualRecord'
 // core components
-import GridContainer from '../../../components/Grid/GridContainer';
-import GridItem from '../../../components/Grid/GridItem';
-import Button from '../../../components/CustomButtons/Button';
-import CustomInput from '../../../components/CustomInput/CustomInput';
-import CustomLinearProgress from '../../../components/CustomLinearProgress/CustomLinearProgress';
-import Paginations from '../../../components/Pagination/Pagination';
-import Badge from '../../../components/Badge/Badge';
-import CustomDropdown from '../../../components/CustomDropdown/CustomDropdown';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Button from 'Components/CustomButtons/Button'
+import CustomInput from 'Components/CustomInput/CustomInput'
+import CustomLinearProgress from 'Components/CustomLinearProgress/CustomLinearProgress'
+import Paginations from 'Components/Pagination/Pagination'
+import Badge from 'Components/Badge/Badge'
+import CustomDropdown from 'Components/CustomDropdown/CustomDropdown'
 
-import basicsStyle from '../../../assets/jss/material-kit-pro-react/views/componentsSections/basicsStyle';
+import basicsStyle from 'Assets/jss/material-kit-pro-react/views/componentsSections/basicsStyle'
 
 class SectionBasics extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       checked: [24, 22],
       selectedEnabled: 'b',
@@ -42,9 +42,9 @@ class SectionBasics extends React.Component {
       simpleSelect: '',
       multipleSelect: [],
       tags: ['amsterdam', 'washington', 'sydney', 'beijing'],
-    };
-    this.handleTags = this.handleTags.bind(this);
-    this.handleChangeEnabled = this.handleChangeEnabled.bind(this);
+    }
+    this.handleTags = this.handleTags.bind(this)
+    this.handleChangeEnabled = this.handleChangeEnabled.bind(this)
   }
 
   componentDidMount() {
@@ -53,53 +53,53 @@ class SectionBasics extends React.Component {
       connect: [true, false],
       step: 1,
       range: { min: 0, max: 100 },
-    });
+    })
     nouislider.create(this.refs.slider2, {
       start: [20, 60],
       connect: [false, true, false],
       step: 1,
       range: { min: 0, max: 100 },
-    });
+    })
   }
 
   handleChange = (name) => (event) => {
-    this.setState({ [name]: event.target.checked });
-  };
+    this.setState({ [name]: event.target.checked })
+  }
 
   handleChangeEnabled(event) {
-    this.setState({ selectedEnabled: event.target.value });
+    this.setState({ selectedEnabled: event.target.value })
   }
 
   handleToggle(value) {
-    const { checked } = this.state;
-    const currentIndex = checked.indexOf(value);
-    const newChecked = [...checked];
+    const { checked } = this.state
+    const currentIndex = checked.indexOf(value)
+    const newChecked = [...checked]
 
     if (currentIndex === -1) {
-      newChecked.push(value);
+      newChecked.push(value)
     } else {
-      newChecked.splice(currentIndex, 1);
+      newChecked.splice(currentIndex, 1)
     }
 
     this.setState({
       checked: newChecked,
-    });
+    })
   }
 
   handleSimple = (event) => {
-    this.setState({ [event.target.name]: event.target.value });
-  };
+    this.setState({ [event.target.name]: event.target.value })
+  }
 
   handleMultiple = (event) => {
-    this.setState({ multipleSelect: event.target.value });
-  };
+    this.setState({ multipleSelect: event.target.value })
+  }
 
   handleTags(regularTags) {
-    this.setState({ tags: regularTags });
+    this.setState({ tags: regularTags })
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classes.sections}>
         <div className={classes.container}>
@@ -1073,8 +1073,8 @@ class SectionBasics extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(basicsStyle)(SectionBasics);
+export default withStyles(basicsStyle)(SectionBasics)

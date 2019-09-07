@@ -8,7 +8,7 @@ import {
   whiteColor,
   description,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const examplesStyle = {
   section: {
@@ -42,6 +42,6 @@ const examplesStyle = {
       transform: 'translate3d(0, -10px, 0)',
     },
   },
-};
+}
 
-export default examplesStyle;
+export default examplesStyle

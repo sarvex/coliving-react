@@ -1,23 +1,23 @@
-import React from 'react';
-import classNames from 'classnames';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import NavPills from 'components/NavPills/NavPills';
-import Button from 'components/CustomButtons/Button';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import withStyles from '@material-ui/core/styles/withStyles';
+import React from 'react'
+import classNames from 'classnames'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import NavPills from 'Components/NavPills/NavPills'
+import Button from 'Components/CustomButtons/Button'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import withStyles from '@material-ui/core/styles/withStyles'
 
-import pricingStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/pricingStyle';
+import pricingStyle from 'Assets/jss/material-kit-pro-react/views/presentationSections/pricingStyle'
 
 const style = {
   ...pricingStyle,
   // ...navPillsContentStyle
-};
+}
 
 class SectionPricing extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classes.section}>
         <div className={classes.container}>
@@ -211,8 +211,8 @@ class SectionPricing extends React.Component {
           </GridContainer>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(style)(SectionPricing);
+export default withStyles(style)(SectionPricing)

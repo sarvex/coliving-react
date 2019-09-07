@@ -1,26 +1,26 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardAvatar from 'components/Card/CardAvatar';
-import CardBody from 'components/Card/CardBody';
-import CardFooter from 'components/Card/CardFooter';
-import Button from 'components/CustomButtons/Button';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardAvatar from 'Components/Card/CardAvatar'
+import CardBody from 'Components/Card/CardBody'
+import CardFooter from 'Components/Card/CardFooter'
+import Button from 'Components/CustomButtons/Button'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 
-import teamStyle from 'assets/jss/material-kit-pro-react/views/aboutUsSections/teamStyle';
+import teamStyle from 'Assets/jss/material-kit-pro-react/views/aboutUsSections/teamStyle'
 
-import FaceMarc from 'assets/img/faces/marc.jpg';
-import FaceChristian from 'assets/img/faces/christian.jpg';
-import FaceKendall from 'assets/img/faces/kendall.jpg';
-import FaceAvatar from 'assets/img/faces/avatar.jpg';
+import FaceMarc from 'Assets/img/faces/marc.jpg'
+import FaceChristian from 'Assets/img/faces/christian.jpg'
+import FaceKendall from 'Assets/img/faces/kendall.jpg'
+import FaceAvatar from 'Assets/img/faces/avatar.jpg'
 
 function SectionTeam(props) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.team}>
       <GridContainer>
@@ -142,7 +142,7 @@ function SectionTeam(props) {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-export default withStyles(teamStyle)(SectionTeam);
+export default withStyles(teamStyle)(SectionTeam)

@@ -1,90 +1,90 @@
-import React from 'react';
+import React from 'react'
 
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import Icon from '@material-ui/core/Icon';
+import withStyles from '@material-ui/core/styles/withStyles'
+import Icon from '@material-ui/core/Icon'
 // @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite';
-import Share from '@material-ui/icons/Share';
-import ChatBubble from '@material-ui/icons/ChatBubble';
-import Schedule from '@material-ui/icons/Schedule';
-import TrendingUp from '@material-ui/icons/TrendingUp';
-import Subject from '@material-ui/icons/Subject';
-import WatchLater from '@material-ui/icons/WatchLater';
-import People from '@material-ui/icons/People';
-import Business from '@material-ui/icons/Business';
-import Check from '@material-ui/icons/Check';
-import Close from '@material-ui/icons/Close';
-import Delete from '@material-ui/icons/Delete';
-import Bookmark from '@material-ui/icons/Bookmark';
-import Refresh from '@material-ui/icons/Refresh';
-import Receipt from '@material-ui/icons/Receipt';
+import Favorite from '@material-ui/icons/Favorite'
+import Share from '@material-ui/icons/Share'
+import ChatBubble from '@material-ui/icons/ChatBubble'
+import Schedule from '@material-ui/icons/Schedule'
+import TrendingUp from '@material-ui/icons/TrendingUp'
+import Subject from '@material-ui/icons/Subject'
+import WatchLater from '@material-ui/icons/WatchLater'
+import People from '@material-ui/icons/People'
+import Business from '@material-ui/icons/Business'
+import Check from '@material-ui/icons/Check'
+import Close from '@material-ui/icons/Close'
+import Delete from '@material-ui/icons/Delete'
+import Bookmark from '@material-ui/icons/Bookmark'
+import Refresh from '@material-ui/icons/Refresh'
+import Receipt from '@material-ui/icons/Receipt'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardHeader from 'components/Card/CardHeader';
-import CardBody from 'components/Card/CardBody';
-import CardFooter from 'components/Card/CardFooter';
-import CardAvatar from 'components/Card/CardAvatar';
-import Info from 'components/Typography/Info';
-import Danger from 'components/Typography/Danger';
-import Success from 'components/Typography/Success';
-import Warning from 'components/Typography/Warning';
-import Rose from 'components/Typography/Rose';
-import Button from 'components/CustomButtons/Button';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardHeader from 'Components/Card/CardHeader'
+import CardBody from 'Components/Card/CardBody'
+import CardFooter from 'Components/Card/CardFooter'
+import CardAvatar from 'Components/Card/CardAvatar'
+import Info from 'Components/Typography/Info'
+import Danger from 'Components/Typography/Danger'
+import Success from 'Components/Typography/Success'
+import Warning from 'Components/Typography/Warning'
+import Rose from 'Components/Typography/Rose'
+import Button from 'Components/CustomButtons/Button'
 
-import styles from 'assets/jss/material-kit-pro-react/views/componentsSections/sectionCards';
+import styles from 'Assets/jss/material-kit-pro-react/views/componentsSections/sectionCards'
 
-import cardBlog1 from 'assets/img/examples/card-blog1.jpg';
-import cardBlog2 from 'assets/img/examples/card-blog2.jpg';
-import cardBlog3 from 'assets/img/examples/card-blog3.jpg';
-import cardBlog5 from 'assets/img/examples/card-blog5.jpg';
-import cardBlog6 from 'assets/img/examples/card-blog6.jpg';
-import cardProfile1 from 'assets/img/examples/card-profile1.jpg';
-import cardProfile4 from 'assets/img/examples/card-profile4.jpg';
-import blog1 from 'assets/img/examples/blog1.jpg';
-import blog5 from 'assets/img/examples/blog5.jpg';
-import blog6 from 'assets/img/examples/blog6.jpg';
-import blog8 from 'assets/img/examples/blog8.jpg';
-import avatar from 'assets/img/faces/avatar.jpg';
-import christian from 'assets/img/faces/christian.jpg';
-import marc from 'assets/img/faces/marc.jpg';
-import office1 from 'assets/img/examples/office1.jpg';
-import color1 from 'assets/img/examples/color1.jpg';
-import color2 from 'assets/img/examples/color2.jpg';
-import color3 from 'assets/img/examples/color3.jpg';
+import cardBlog1 from 'Assets/img/examples/card-blog1.jpg'
+import cardBlog2 from 'Assets/img/examples/card-blog2.jpg'
+import cardBlog3 from 'Assets/img/examples/card-blog3.jpg'
+import cardBlog5 from 'Assets/img/examples/card-blog5.jpg'
+import cardBlog6 from 'Assets/img/examples/card-blog6.jpg'
+import cardProfile1 from 'Assets/img/examples/card-profile1.jpg'
+import cardProfile4 from 'Assets/img/examples/card-profile4.jpg'
+import blog1 from 'Assets/img/examples/blog1.jpg'
+import blog5 from 'Assets/img/examples/blog5.jpg'
+import blog6 from 'Assets/img/examples/blog6.jpg'
+import blog8 from 'Assets/img/examples/blog8.jpg'
+import avatar from 'Assets/img/faces/avatar.jpg'
+import christian from 'Assets/img/faces/christian.jpg'
+import marc from 'Assets/img/faces/marc.jpg'
+import office1 from 'Assets/img/examples/office1.jpg'
+import color1 from 'Assets/img/examples/color1.jpg'
+import color2 from 'Assets/img/examples/color2.jpg'
+import color3 from 'Assets/img/examples/color3.jpg'
 
 class SectionCards extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       activeRotate1: '',
       activeRotate2: '',
-    };
+    }
   }
 
   componentDidMount() {
-    const { classes } = this.props;
-    const rotatingCards = document.getElementsByClassName(classes.cardRotate);
+    const { classes } = this.props
+    const rotatingCards = document.getElementsByClassName(classes.cardRotate)
     for (let i = 0; i < rotatingCards.length; i++) {
-      const rotatingCard = rotatingCards[i];
-      const rotatingWrapper = rotatingCard.parentElement;
-      const cardWidth = rotatingCard.parentElement.offsetWidth;
-      const cardHeight = rotatingCard.children[0].children[0].offsetHeight;
-      rotatingWrapper.style.height = `${cardHeight}px`;
-      rotatingWrapper.style['margin-bottom'] = `${30}px`;
-      const cardFront = rotatingCard.getElementsByClassName(classes.front)[0];
-      const cardBack = rotatingCard.getElementsByClassName(classes.back)[0];
-      cardFront.style.height = `${cardHeight + 35}px`;
-      cardFront.style.width = `${cardWidth}px`;
-      cardBack.style.height = `${cardHeight + 35}px`;
-      cardBack.style.width = `${cardWidth}px`;
+      const rotatingCard = rotatingCards[i]
+      const rotatingWrapper = rotatingCard.parentElement
+      const cardWidth = rotatingCard.parentElement.offsetWidth
+      const cardHeight = rotatingCard.children[0].children[0].offsetHeight
+      rotatingWrapper.style.height = `${cardHeight}px`
+      rotatingWrapper.style['margin-bottom'] = `${30}px`
+      const cardFront = rotatingCard.getElementsByClassName(classes.front)[0]
+      const cardBack = rotatingCard.getElementsByClassName(classes.back)[0]
+      cardFront.style.height = `${cardHeight + 35}px`
+      cardFront.style.width = `${cardWidth}px`
+      cardBack.style.height = `${cardHeight + 35}px`
+      cardBack.style.width = `${cardWidth}px`
     }
   }
 
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes, ...rest } = this.props
     return (
       <div {...rest} className='cd-section' id='cards'>
         <div className={classes.sectionGray}>
@@ -1271,8 +1271,8 @@ class SectionCards extends React.Component {
           {/* PROFILE PLAIN CARDS END */}
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(styles)(SectionCards);
+export default withStyles(styles)(SectionCards)

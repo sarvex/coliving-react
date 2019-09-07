@@ -7,7 +7,7 @@ import {
   blackColor,
   whiteColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const features = {
   container,
@@ -100,6 +100,6 @@ const features = {
     padding: '10px 0 0px',
   },
   infoArea5: {},
-};
+}
 
-export default features;
+export default features

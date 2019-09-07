@@ -1,48 +1,48 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite';
+import Favorite from '@material-ui/icons/Favorite'
 // core components
-import Header from 'components/Header/Header';
-import HeaderLinks from 'components/Header/HeaderLinks';
-import Footer from 'components/Footer/Footer';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
+import Header from 'Components/Header/Header'
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import Footer from 'Components/Footer/Footer'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
 
-import errorPageStyle from 'assets/jss/material-kit-pro-react/views/errorPageStyles';
+import errorPageStyle from 'Assets/jss/material-kit-pro-react/views/errorPageStyles'
 
-import image from 'assets/img/clint-mckoy.jpg';
+import image from 'Assets/img/clint-mckoy.jpg'
 
 class Error extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       checked: [1],
-    };
-    this.handleToggle = this.handleToggle.bind(this);
+    }
+    this.handleToggle = this.handleToggle.bind(this)
   }
 
   handleToggle(value) {
-    const { checked } = this.state;
-    const currentIndex = checked.indexOf(value);
-    const newChecked = [...checked];
+    const { checked } = this.state
+    const currentIndex = checked.indexOf(value)
+    const newChecked = [...checked]
 
     if (currentIndex === -1) {
-      newChecked.push(value);
+      newChecked.push(value)
     } else {
-      newChecked.splice(currentIndex, 1);
+      newChecked.splice(currentIndex, 1)
     }
 
     this.setState({
       checked: newChecked,
-    });
+    })
   }
 
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes, ...rest } = this.props
     return (
       <div>
         <Header
@@ -106,8 +106,8 @@ class Error extends React.Component {
           }
         />
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(errorPageStyle)(Error);
+export default withStyles(errorPageStyle)(Error)

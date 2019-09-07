@@ -9,9 +9,9 @@ import {
   blackColor,
   whiteColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
-import customCheckboxRadioSwitch from 'assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle';
+import customCheckboxRadioSwitch from 'Assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle'
 
 const contactsSection = {
   ...customCheckboxRadioSwitch,
@@ -108,6 +108,6 @@ const contactsSection = {
       lineHeight: '1.55em',
     },
   },
-};
+}
 
-export default contactsSection;
+export default contactsSection

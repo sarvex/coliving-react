@@ -1,20 +1,20 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
-import Gesture from '@material-ui/icons/Gesture';
-import Build from '@material-ui/icons/Build';
+import Gesture from '@material-ui/icons/Gesture'
+import Build from '@material-ui/icons/Build'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import InfoArea from 'components/InfoArea/InfoArea';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import InfoArea from 'Components/InfoArea/InfoArea'
 
-import servicesStyle from 'assets/jss/material-kit-pro-react/views/aboutUsSections/servicesStyle';
+import servicesStyle from 'Assets/jss/material-kit-pro-react/views/aboutUsSections/servicesStyle'
 
 function SectionServices(props) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.services}>
       <GridContainer>
@@ -77,7 +77,7 @@ function SectionServices(props) {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-export default withStyles(servicesStyle)(SectionServices);
+export default withStyles(servicesStyle)(SectionServices)

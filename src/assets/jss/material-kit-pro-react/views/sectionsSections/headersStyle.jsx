@@ -1,5 +1,5 @@
-import headerLinksStyle from 'assets/jss/material-kit-pro-react/components/headerLinksStyle';
-import { container, mrAuto, title, blackColor, whiteColor, hexToRgb } from 'assets/jss/material-kit-pro-react';
+import headerLinksStyle from 'Assets/jss/material-kit-pro-react/components/headerLinksStyle'
+import { container, mrAuto, title, blackColor, whiteColor, hexToRgb } from 'Assets/jss/material-kit-pro-react'
 
 const headersSection = (theme) => ({
   ...headerLinksStyle(theme),
@@ -56,7 +56,7 @@ const headersSection = (theme) => ({
     '& > iframe': {
       width: '100%',
       boxShadow: `0 16px 38px -12px rgba(${hexToRgb(blackColor)}, 0.56), 0 4px 25px 0px rgba(${hexToRgb(
-        blackColor,
+        blackColor
       )}, 0.12), 0 8px 10px -5px rgba(${hexToRgb(blackColor)}, 0.2)`,
     },
   },
@@ -77,6 +77,6 @@ const headersSection = (theme) => ({
   button: {
     margin: '0 !important',
   },
-});
+})
 
-export default headersSection;
+export default headersSection

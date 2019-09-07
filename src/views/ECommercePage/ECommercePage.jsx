@@ -1,44 +1,44 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // core components
-import Header from 'components/Header/Header';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Parallax from 'components/Parallax/Parallax';
-import Button from 'components/CustomButtons/Button';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import CustomInput from 'components/CustomInput/CustomInput';
-import Footer from 'components/Footer/Footer';
+import Header from 'Components/Header/Header'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Parallax from 'Components/Parallax/Parallax'
+import Button from 'Components/CustomButtons/Button'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import CustomInput from 'Components/CustomInput/CustomInput'
+import Footer from 'Components/Footer/Footer'
 // sections for this page
-import HeaderLinks from 'components/Header/HeaderLinks';
-import SectionLatestOffers from 'views/ECommercePage/Sections/SectionLatestOffers';
-import SectionProducts from 'views/ECommercePage/Sections/SectionProducts';
-import SectionBlog from 'views/ECommercePage/Sections/SectionBlog';
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import SectionLatestOffers from 'Views/ECommercePage/Sections/SectionLatestOffers'
+import SectionProducts from 'Views/ECommercePage/Sections/SectionProducts'
+import SectionBlog from 'Views/ECommercePage/Sections/SectionBlog'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import InputAdornment from '@material-ui/core/InputAdornment';
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import InputAdornment from '@material-ui/core/InputAdornment'
 // @material-ui icons
-import Mail from '@material-ui/icons/Mail';
+import Mail from '@material-ui/icons/Mail'
 
-import ecommerceHeader from 'assets/img/examples/ecommerce-header.jpg';
-import face1 from 'assets/img/faces/card-profile6-square.jpg';
-import face2 from 'assets/img/faces/christian.jpg';
-import face3 from 'assets/img/faces/card-profile4-square.jpg';
-import face4 from 'assets/img/faces/card-profile1-square.jpg';
-import face5 from 'assets/img/faces/marc.jpg';
-import face6 from 'assets/img/faces/kendall.jpg';
-import face7 from 'assets/img/faces/card-profile5-square.jpg';
-import face8 from 'assets/img/faces/card-profile2-square.jpg';
+import ecommerceHeader from 'Assets/img/examples/ecommerce-header.jpg'
+import face1 from 'Assets/img/faces/card-profile6-square.jpg'
+import face2 from 'Assets/img/faces/christian.jpg'
+import face3 from 'Assets/img/faces/card-profile4-square.jpg'
+import face4 from 'Assets/img/faces/card-profile1-square.jpg'
+import face5 from 'Assets/img/faces/marc.jpg'
+import face6 from 'Assets/img/faces/kendall.jpg'
+import face7 from 'Assets/img/faces/card-profile5-square.jpg'
+import face8 from 'Assets/img/faces/card-profile2-square.jpg'
 
-import styles from 'assets/jss/material-kit-pro-react/views/ecommerceStyle';
+import styles from 'Assets/jss/material-kit-pro-react/views/ecommerceStyle'
 
 class EcommercePage extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div>
         <Header
@@ -51,7 +51,7 @@ class EcommercePage extends React.Component {
             color: 'info',
           }}
         />
-        <Parallax image={require('assets/img/examples/clark-street-merc.jpg')} filter='dark' small>
+        <Parallax image={require('Assets/img/examples/clark-street-merc.jpg')} filter='dark' small>
           <div className={classes.container}>
             <GridContainer>
               <GridItem md={8} sm={8} className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}>
@@ -206,8 +206,8 @@ class EcommercePage extends React.Component {
           </GridContainer>
         </Footer>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(styles)(EcommercePage);
+export default withStyles(styles)(EcommercePage)

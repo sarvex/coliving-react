@@ -10,7 +10,7 @@ import {
   blackColor,
   whiteColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const testimonialsSection = {
   container,
@@ -103,6 +103,6 @@ const testimonialsSection = {
       fontStyle: 'italic',
     },
   },
-};
+}
 
-export default testimonialsSection;
+export default testimonialsSection

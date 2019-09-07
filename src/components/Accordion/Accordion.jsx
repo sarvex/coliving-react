@@ -1,21 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import withStyles from '@material-ui/core/styles/withStyles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import React from 'react'
+import PropTypes from 'prop-types'
+import withStyles from '@material-ui/core/styles/withStyles'
+import ExpansionPanel from '@material-ui/core/ExpansionPanel'
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
 
-import ExpandMore from '@material-ui/icons/ExpandMore';
+import ExpandMore from '@material-ui/icons/ExpandMore'
 
-import accordionStyle from 'assets/jss/material-kit-pro-react/components/accordionStyle';
+import accordionStyle from 'Assets/jss/material-kit-pro-react/components/accordionStyle'
 
 class Accordion extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       active: props.active,
       single: false,
-    };
+    }
   }
 
   componentWillMount() {
@@ -24,32 +24,32 @@ class Accordion extends React.Component {
       this.setState({
         active: [this.state.active],
         single: true,
-      });
+      })
     }
   }
 
   handleChange = (panel) => (event, expanded) => {
-    let newArray;
+    let newArray
 
     if (this.state.single) {
       if (this.state.active[0] === panel) {
-        newArray = [];
+        newArray = []
       } else {
-        newArray = [panel];
+        newArray = [panel]
       }
     } else if (this.state.active.indexOf(panel) === -1) {
-      newArray = [...this.state.active, panel];
+      newArray = [...this.state.active, panel]
     } else {
-      newArray = [...this.state.active];
-      newArray.splice(this.state.active.indexOf(panel), 1);
+      newArray = [...this.state.active]
+      newArray.splice(this.state.active.indexOf(panel), 1)
     }
     this.setState({
       active: newArray,
-    });
-  };
+    })
+  }
 
   render() {
-    const { classes, collapses, activeColor } = this.props;
+    const { classes, collapses, activeColor } = this.props
     return (
       <div className={classes.root}>
         {collapses.map((prop, key) => {
@@ -76,17 +76,17 @@ class Accordion extends React.Component {
               </ExpansionPanelSummary>
               <ExpansionPanelDetails className={classes.expansionPanelDetails}>{prop.content}</ExpansionPanelDetails>
             </ExpansionPanel>
-          );
+          )
         })}
       </div>
-    );
+    )
   }
 }
 
 Accordion.defaultProps = {
   active: -1,
   activeColor: 'primary',
-};
+}
 
 Accordion.propTypes = {
   classes: PropTypes.object.isRequired,
@@ -96,9 +96,9 @@ Accordion.propTypes = {
     PropTypes.shape({
       title: PropTypes.string,
       content: PropTypes.node,
-    }),
+    })
   ).isRequired,
   activeColor: PropTypes.oneOf(['primary', 'secondary', 'warning', 'danger', 'success', 'info', 'rose']),
-};
+}
 
-export default withStyles(accordionStyle)(Accordion);
+export default withStyles(accordionStyle)(Accordion)

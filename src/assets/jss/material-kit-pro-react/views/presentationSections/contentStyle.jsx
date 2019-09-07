@@ -7,7 +7,7 @@ import {
   blackColor,
   grayColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react';
+} from 'Assets/jss/material-kit-pro-react'
 
 const contentStyle = (theme) => ({
   container,
@@ -46,7 +46,7 @@ const contentStyle = (theme) => ({
     top: '10%',
     left: '60%',
     boxShadow: `0 8px 10px 1px rgba(${hexToRgb(blackColor)}, 0.14), 0 3px 14px 2px rgba(${hexToRgb(
-      blackColor,
+      blackColor
     )}, 0.12), 0 5px 5px -3px rgba(${hexToRgb(blackColor)}, 0.2)`,
     [theme.breakpoints.down('sm')]: {
       maxWidth: '130px',
@@ -59,7 +59,7 @@ const contentStyle = (theme) => ({
     top: '50%',
     left: '0%',
     boxShadow: `0 8px 10px 1px rgba(${hexToRgb(blackColor)}, 0.14), 0 3px 14px 2px rgba(${hexToRgb(
-      blackColor,
+      blackColor
     )}, 0.12), 0 5px 5px -3px rgba(${hexToRgb(blackColor)}, 0.2)`,
     [theme.breakpoints.down('sm')]: {
       maxWidth: '170px',
@@ -76,6 +76,6 @@ const contentStyle = (theme) => ({
     left: '60%',
     position: 'absolute',
   },
-});
+})
 
-export default contentStyle;
+export default contentStyle

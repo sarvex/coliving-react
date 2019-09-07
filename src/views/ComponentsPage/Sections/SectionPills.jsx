@@ -1,22 +1,22 @@
-import React from 'react';
+import React from 'react'
 
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 
 // @material-ui/icons
-import Dashboard from '@material-ui/icons/Dashboard';
-import Schedule from '@material-ui/icons/Schedule';
-import List from '@material-ui/icons/List';
+import Dashboard from '@material-ui/icons/Dashboard'
+import Schedule from '@material-ui/icons/Schedule'
+import List from '@material-ui/icons/List'
 
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import NavPills from 'components/NavPills/NavPills';
-import pillsStyle from 'assets/jss/material-kit-pro-react/views/componentsSections/pillsStyle';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import NavPills from 'Components/NavPills/NavPills'
+import pillsStyle from 'Assets/jss/material-kit-pro-react/views/componentsSections/pillsStyle'
 
 class SectionPills extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classes.section}>
         <div className={classes.container}>
@@ -272,8 +272,8 @@ class SectionPills extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(pillsStyle)(SectionPills);
+export default withStyles(pillsStyle)(SectionPills)

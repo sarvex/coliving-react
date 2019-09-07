@@ -1,23 +1,23 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Quote from 'components/Typography/Quote';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Quote from 'Components/Typography/Quote'
 // core components
 
-import blog4 from 'assets/img/examples/blog4.jpg';
-import blog3 from 'assets/img/examples/blog3.jpg';
-import blog1 from 'assets/img/examples/blog1.jpg';
+import blog4 from 'Assets/img/examples/blog4.jpg'
+import blog3 from 'Assets/img/examples/blog3.jpg'
+import blog1 from 'Assets/img/examples/blog1.jpg'
 
-import sectionTextStyle from 'assets/jss/material-kit-pro-react/views/blogPostSections/sectionTextStyle';
+import sectionTextStyle from 'Assets/jss/material-kit-pro-react/views/blogPostSections/sectionTextStyle'
 
 function SectionText({ ...props }) {
-  const { classes } = props;
-  const imgClasses = classNames(classes.imgRaised, classes.imgRounded, classes.imgFluid);
+  const { classes } = props
+  const imgClasses = classNames(classes.imgRaised, classes.imgRounded, classes.imgFluid)
   return (
     <div className={classes.section}>
       <GridContainer justify='center'>
@@ -77,7 +77,7 @@ function SectionText({ ...props }) {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-export default withStyles(sectionTextStyle)(SectionText);
+export default withStyles(sectionTextStyle)(SectionText)

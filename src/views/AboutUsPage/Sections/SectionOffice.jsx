@@ -1,23 +1,23 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 
-import officeStyle from 'assets/jss/material-kit-pro-react/views/aboutUsSections/officeStyle';
+import officeStyle from 'Assets/jss/material-kit-pro-react/views/aboutUsSections/officeStyle'
 
 // office
-import office1 from 'assets/img/examples/office1.jpg';
-import office2 from 'assets/img/examples/office2.jpg';
-import office3 from 'assets/img/examples/office3.jpg';
-import office4 from 'assets/img/examples/office4.jpg';
-import office5 from 'assets/img/examples/office5.jpg';
+import office1 from 'Assets/img/examples/office1.jpg'
+import office2 from 'Assets/img/examples/office2.jpg'
+import office3 from 'Assets/img/examples/office3.jpg'
+import office4 from 'Assets/img/examples/office4.jpg'
+import office5 from 'Assets/img/examples/office5.jpg'
 
 function SectionOffice(props) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.office}>
       <GridContainer className={classes.textCenter}>
@@ -67,7 +67,7 @@ function SectionOffice(props) {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-export default withStyles(officeStyle)(SectionOffice);
+export default withStyles(officeStyle)(SectionOffice)

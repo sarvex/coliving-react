@@ -1,33 +1,33 @@
-import React from 'react';
-import classNames from 'classnames';
-import { Link } from 'react-router-dom';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import withStyles from '@material-ui/core/styles/withStyles';
+import React from 'react'
+import classNames from 'classnames'
+import { Link } from 'react-router-dom'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import withStyles from '@material-ui/core/styles/withStyles'
 
-import examplesStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/examplesStyle';
-import imagesStyles from 'assets/jss/material-kit-pro-react/imagesStyles';
+import examplesStyle from 'Assets/jss/material-kit-pro-react/views/presentationSections/examplesStyle'
+import imagesStyles from 'Assets/jss/material-kit-pro-react/imagesStyles'
 
-import exAboutUs from 'assets/img/assets-for-demo/example-pages/ex-about-us.jpg';
-import exLanding from 'assets/img/assets-for-demo/example-pages/ex-landing.jpg';
-import exContact from 'assets/img/assets-for-demo/example-pages/ex-contact.jpg';
-import exBlogPost from 'assets/img/assets-for-demo/example-pages/ex-blog-post.jpg';
-import exProductPage from 'assets/img/assets-for-demo/example-pages/ex-product.jpg';
-import exLoginPage from 'assets/img/assets-for-demo/example-pages/ex-login.jpg';
-import exPricing from 'assets/img/assets-for-demo/example-pages/ex-pricing.jpg';
-import exSignup from 'assets/img/assets-for-demo/example-pages/ex-register.jpg';
-import exProfile from 'assets/img/assets-for-demo/example-pages/ex-profile.jpg';
-import exBlog from 'assets/img/assets-for-demo/example-pages/ex-blog-posts.jpg';
+import exAboutUs from 'Assets/img/assets-for-demo/example-pages/ex-about-us.jpg'
+import exLanding from 'Assets/img/assets-for-demo/example-pages/ex-landing.jpg'
+import exContact from 'Assets/img/assets-for-demo/example-pages/ex-contact.jpg'
+import exBlogPost from 'Assets/img/assets-for-demo/example-pages/ex-blog-post.jpg'
+import exProductPage from 'Assets/img/assets-for-demo/example-pages/ex-product.jpg'
+import exLoginPage from 'Assets/img/assets-for-demo/example-pages/ex-login.jpg'
+import exPricing from 'Assets/img/assets-for-demo/example-pages/ex-pricing.jpg'
+import exSignup from 'Assets/img/assets-for-demo/example-pages/ex-register.jpg'
+import exProfile from 'Assets/img/assets-for-demo/example-pages/ex-profile.jpg'
+import exBlog from 'Assets/img/assets-for-demo/example-pages/ex-blog-posts.jpg'
 
 const styles = {
   ...examplesStyle,
   ...imagesStyles,
-};
+}
 
 class SectionExamples extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classNames(classes.section, classes.sectionDark)}>
         <div className={classes.container}>
@@ -111,8 +111,8 @@ class SectionExamples extends React.Component {
           </GridContainer>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(styles)(SectionExamples);
+export default withStyles(styles)(SectionExamples)

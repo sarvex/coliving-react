@@ -1,26 +1,26 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
-import TrendingUp from '@material-ui/icons/TrendingUp';
+import TrendingUp from '@material-ui/icons/TrendingUp'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import CardHeader from 'components/Card/CardHeader';
-import Info from 'components/Typography/Info';
-import Success from 'components/Typography/Success';
-import Danger from 'components/Typography/Danger';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import CardHeader from 'Components/Card/CardHeader'
+import Info from 'Components/Typography/Info'
+import Success from 'Components/Typography/Success'
+import Danger from 'Components/Typography/Danger'
 
-import bg5 from 'assets/img/bg5.jpg';
-import blog5 from 'assets/img/examples/blog5.jpg';
-import blog6 from 'assets/img/examples/blog6.jpg';
+import bg5 from 'Assets/img/bg5.jpg'
+import blog5 from 'Assets/img/examples/blog5.jpg'
+import blog6 from 'Assets/img/examples/blog6.jpg'
 
-import sectionInterestedStyle from 'assets/jss/material-kit-pro-react/views/blogPostsSections/sectionInterestedStyle';
+import sectionInterestedStyle from 'Assets/jss/material-kit-pro-react/views/blogPostsSections/sectionInterestedStyle'
 
 function SectionInterested({ ...props }) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.section}>
       <h3 className={`${classes.title} ${classes.textCenter}`}>You may also be interested in</h3>
@@ -117,7 +117,7 @@ function SectionInterested({ ...props }) {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-export default withStyles(sectionInterestedStyle)(SectionInterested);
+export default withStyles(sectionInterestedStyle)(SectionInterested)

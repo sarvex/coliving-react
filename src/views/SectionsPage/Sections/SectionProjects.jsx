@@ -1,37 +1,37 @@
-import React from 'react';
-import withStyles from '@material-ui/core/styles/withStyles';
-import Icon from '@material-ui/core/Icon';
-import Build from '@material-ui/icons/Build';
-import Subject from '@material-ui/icons/Subject';
-import FormatPaint from '@material-ui/icons/FormatPaint';
-import Code from '@material-ui/icons/Code';
-import Dashboard from '@material-ui/icons/Dashboard';
-import Timeline from '@material-ui/icons/Timeline';
-import Group from '@material-ui/icons/Group';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import NavPills from 'components/NavPills/NavPills';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import CardHeader from 'components/Card/CardHeader';
-import Button from 'components/CustomButtons/Button';
-import Muted from 'components/Typography/Muted';
-import InfoArea from 'components/InfoArea/InfoArea';
-import Badge from 'components/Badge/Badge';
+import React from 'react'
+import withStyles from '@material-ui/core/styles/withStyles'
+import Icon from '@material-ui/core/Icon'
+import Build from '@material-ui/icons/Build'
+import Subject from '@material-ui/icons/Subject'
+import FormatPaint from '@material-ui/icons/FormatPaint'
+import Code from '@material-ui/icons/Code'
+import Dashboard from '@material-ui/icons/Dashboard'
+import Timeline from '@material-ui/icons/Timeline'
+import Group from '@material-ui/icons/Group'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import NavPills from 'Components/NavPills/NavPills'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import CardHeader from 'Components/Card/CardHeader'
+import Button from 'Components/CustomButtons/Button'
+import Muted from 'Components/Typography/Muted'
+import InfoArea from 'Components/InfoArea/InfoArea'
+import Badge from 'Components/Badge/Badge'
 
-import projectsStyle from 'assets/jss/material-kit-pro-react/views/sectionsSections/projectsStyle';
+import projectsStyle from 'Assets/jss/material-kit-pro-react/views/sectionsSections/projectsStyle'
 
-import office2 from 'assets/img/examples/office2.jpg';
-import cardBlog3 from 'assets/img/examples/card-blog3.jpg';
-import cardProject1 from 'assets/img/examples/card-project1.jpg';
-import cardProject2 from 'assets/img/examples/card-project2.jpg';
-import cardProject3 from 'assets/img/examples/card-project3.jpg';
-import cardProject4 from 'assets/img/examples/card-project4.jpg';
-import cardProject5 from 'assets/img/examples/card-project5.jpg';
-import cardProject6 from 'assets/img/examples/card-project6.jpg';
+import office2 from 'Assets/img/examples/office2.jpg'
+import cardBlog3 from 'Assets/img/examples/card-blog3.jpg'
+import cardProject1 from 'Assets/img/examples/card-project1.jpg'
+import cardProject2 from 'Assets/img/examples/card-project2.jpg'
+import cardProject3 from 'Assets/img/examples/card-project3.jpg'
+import cardProject4 from 'Assets/img/examples/card-project4.jpg'
+import cardProject5 from 'Assets/img/examples/card-project5.jpg'
+import cardProject6 from 'Assets/img/examples/card-project6.jpg'
 
 function SectionProjects({ ...props }) {
-  const { classes, ...rest } = props;
+  const { classes, ...rest } = props
   return (
     <div className='cd-section' {...rest}>
       {/* Project 1 START */}
@@ -405,7 +405,7 @@ function SectionProjects({ ...props }) {
       </div>
       {/* Project 4 END */}
     </div>
-  );
+  )
 }
 
-export default withStyles(projectsStyle)(SectionProjects);
+export default withStyles(projectsStyle)(SectionProjects)

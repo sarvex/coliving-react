@@ -1,87 +1,87 @@
-import React from 'react';
+import React from 'react'
 
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
 // core components
-import Header from 'components/Header/Header';
-import HeaderLinks from 'components/Header/HeaderLinks';
+import Header from 'Components/Header/Header'
+import HeaderLinks from 'Components/Header/HeaderLinks'
 // sections of this Page
-import sectionsPageStyle from 'assets/jss/material-kit-pro-react/views/sectionsPageStyle';
-import SectionHeaders from './Sections/SectionHeaders';
-import SectionFeatures from './Sections/SectionFeatures';
-import SectionBlogs from './Sections/SectionBlogs';
-import SectionTeams from './Sections/SectionTeams';
-import SectionProjects from './Sections/SectionProjects';
-import SectionPricing from './Sections/SectionPricing';
-import SectionTestimonials from './Sections/SectionTestimonials';
-import SectionContacts from './Sections/SectionContacts';
+import sectionsPageStyle from 'Assets/jss/material-kit-pro-react/views/sectionsPageStyle'
+import SectionHeaders from './Sections/SectionHeaders'
+import SectionFeatures from './Sections/SectionFeatures'
+import SectionBlogs from './Sections/SectionBlogs'
+import SectionTeams from './Sections/SectionTeams'
+import SectionProjects from './Sections/SectionProjects'
+import SectionPricing from './Sections/SectionPricing'
+import SectionTestimonials from './Sections/SectionTestimonials'
+import SectionContacts from './Sections/SectionContacts'
 
 class SectionsPage extends React.Component {
   componentDidMount() {
-    const href = window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
-    if (window.location.href.lastIndexOf('#') > 0) document.getElementById(href).scrollIntoView();
-    window.addEventListener('scroll', this.updateView);
-    this.updateView();
+    const href = window.location.href.substring(window.location.href.lastIndexOf('#') + 1)
+    if (window.location.href.lastIndexOf('#') > 0) document.getElementById(href).scrollIntoView()
+    window.addEventListener('scroll', this.updateView)
+    this.updateView()
   }
 
   componentDidUpdate() {
-    const href = window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
-    document.getElementById(href).scrollIntoView();
+    const href = window.location.href.substring(window.location.href.lastIndexOf('#') + 1)
+    document.getElementById(href).scrollIntoView()
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.updateView);
+    window.removeEventListener('scroll', this.updateView)
   }
 
   easeInOutQuad(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * t * t + b;
-    t--;
-    return (-c / 2) * (t * (t - 2) - 1) + b;
+    t /= d / 2
+    if (t < 1) return (c / 2) * t * t + b
+    t--
+    return (-c / 2) * (t * (t - 2) - 1) + b
   }
 
   updateView() {
-    const contentSections = document.getElementsByClassName('cd-section');
-    const navigationItems = document.getElementById('cd-vertical-nav').getElementsByTagName('a');
+    const contentSections = document.getElementsByClassName('cd-section')
+    const navigationItems = document.getElementById('cd-vertical-nav').getElementsByTagName('a')
 
     for (let i = 0; i < contentSections.length; i++) {
-      const activeSection = parseInt(navigationItems[i].getAttribute('data-number'), 10) - 1;
+      const activeSection = parseInt(navigationItems[i].getAttribute('data-number'), 10) - 1
       if (
         contentSections[i].offsetTop - window.innerHeight / 2 < window.pageYOffset &&
         contentSections[i].offsetTop + contentSections[i].scrollHeight - window.innerHeight / 2 > window.pageYOffset
       ) {
-        navigationItems[activeSection].classList.add('is-selected');
+        navigationItems[activeSection].classList.add('is-selected')
       } else {
-        navigationItems[activeSection].classList.remove('is-selected');
+        navigationItems[activeSection].classList.remove('is-selected')
       }
     }
   }
 
   smoothScroll(target) {
-    const targetScroll = document.getElementById(target);
-    this.scrollGo(document.documentElement, targetScroll.offsetTop, 1250);
+    const targetScroll = document.getElementById(target)
+    this.scrollGo(document.documentElement, targetScroll.offsetTop, 1250)
   }
 
   scrollGo(element, to, duration) {
-    const start = element.scrollTop;
-    const change = to - start;
-    let currentTime = 0;
-    const increment = 20;
+    const start = element.scrollTop
+    const change = to - start
+    let currentTime = 0
+    const increment = 20
 
     var animateScroll = function() {
-      currentTime += increment;
-      const val = this.easeInOutQuad(currentTime, start, change, duration);
-      element.scrollTop = val;
+      currentTime += increment
+      const val = this.easeInOutQuad(currentTime, start, change, duration)
+      element.scrollTop = val
       if (currentTime < duration) {
-        setTimeout(animateScroll, increment);
+        setTimeout(animateScroll, increment)
       }
-    }.bind(this);
-    animateScroll();
+    }.bind(this)
+    animateScroll()
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div>
         <Header color='info' brand='Material Kit PRO React' links={<HeaderLinks dropdownHoverColor='info' />} fixed />
@@ -103,12 +103,12 @@ class SectionsPage extends React.Component {
                 data-number='1'
                 className='is-selected'
                 onClick={(e) => {
-                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
                   if (isMobile) {
                     // if we are on mobile device the scroll into view will be managed by the browser
                   } else {
-                    e.preventDefault();
-                    this.smoothScroll('headers');
+                    e.preventDefault()
+                    this.smoothScroll('headers')
                   }
                 }}>
                 <span className='cd-dot' />
@@ -121,12 +121,12 @@ class SectionsPage extends React.Component {
                 data-number='2'
                 className=''
                 onClick={(e) => {
-                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
                   if (isMobile) {
                     // if we are on mobile device the scroll into view will be managed by the browser
                   } else {
-                    e.preventDefault();
-                    this.smoothScroll('features');
+                    e.preventDefault()
+                    this.smoothScroll('features')
                   }
                 }}>
                 <span className='cd-dot' />
@@ -139,12 +139,12 @@ class SectionsPage extends React.Component {
                 data-number='3'
                 className=''
                 onClick={(e) => {
-                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
                   if (isMobile) {
                     // if we are on mobile device the scroll into view will be managed by the browser
                   } else {
-                    e.preventDefault();
-                    this.smoothScroll('blogs');
+                    e.preventDefault()
+                    this.smoothScroll('blogs')
                   }
                 }}>
                 <span className='cd-dot' />
@@ -157,12 +157,12 @@ class SectionsPage extends React.Component {
                 data-number='4'
                 className=''
                 onClick={(e) => {
-                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
                   if (isMobile) {
                     // if we are on mobile device the scroll into view will be managed by the browser
                   } else {
-                    e.preventDefault();
-                    this.smoothScroll('teams');
+                    e.preventDefault()
+                    this.smoothScroll('teams')
                   }
                 }}>
                 <span className='cd-dot' />
@@ -175,12 +175,12 @@ class SectionsPage extends React.Component {
                 data-number='5'
                 className=''
                 onClick={(e) => {
-                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
                   if (isMobile) {
                     // if we are on mobile device the scroll into view will be managed by the browser
                   } else {
-                    e.preventDefault();
-                    this.smoothScroll('projects');
+                    e.preventDefault()
+                    this.smoothScroll('projects')
                   }
                 }}>
                 <span className='cd-dot' />
@@ -193,12 +193,12 @@ class SectionsPage extends React.Component {
                 data-number='6'
                 className=''
                 onClick={(e) => {
-                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
                   if (isMobile) {
                     // if we are on mobile device the scroll into view will be managed by the browser
                   } else {
-                    e.preventDefault();
-                    this.smoothScroll('pricing');
+                    e.preventDefault()
+                    this.smoothScroll('pricing')
                   }
                 }}>
                 <span className='cd-dot' />
@@ -211,12 +211,12 @@ class SectionsPage extends React.Component {
                 data-number='7'
                 className=''
                 onClick={(e) => {
-                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
                   if (isMobile) {
                     // if we are on mobile device the scroll into view will be managed by the browser
                   } else {
-                    e.preventDefault();
-                    this.smoothScroll('testimonials');
+                    e.preventDefault()
+                    this.smoothScroll('testimonials')
                   }
                 }}>
                 <span className='cd-dot' />
@@ -229,12 +229,12 @@ class SectionsPage extends React.Component {
                 data-number='8'
                 className=''
                 onClick={(e) => {
-                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+                  const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
                   if (isMobile) {
                     // if we are on mobile device the scroll into view will be managed by the browser
                   } else {
-                    e.preventDefault();
-                    this.smoothScroll('contacts');
+                    e.preventDefault()
+                    this.smoothScroll('contacts')
                   }
                 }}>
                 <span className='cd-dot' />
@@ -244,8 +244,8 @@ class SectionsPage extends React.Component {
           </ul>
         </nav>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(sectionsPageStyle)(SectionsPage);
+export default withStyles(sectionsPageStyle)(SectionsPage)

@@ -1,21 +1,21 @@
-import React from 'react';
-import GridContainer from 'components/Grid/GridContainer';
-import withStyles from '@material-ui/core/styles/withStyles';
+import React from 'react'
+import GridContainer from 'Components/Grid/GridContainer'
+import withStyles from '@material-ui/core/styles/withStyles'
 
-import componentsStyle from 'assets/jss/material-kit-pro-react/views/presentationSections/componentsStyle';
+import componentsStyle from 'Assets/jss/material-kit-pro-react/views/presentationSections/componentsStyle'
 
-import macbookImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/laptop-basics.png';
-import shoppingCartImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/table.jpg';
-import shareButtonImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/share-btn.jpg';
-import cardImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card-with-btn.jpg';
-import twitterImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg';
-import iconsImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg';
-import repostImage from 'assets/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg';
-import GridItem from '../../../components/Grid/GridItem';
+import macbookImage from 'Assets/img/assets-for-demo/presentationViewSectionComponent/laptop-basics.png'
+import shoppingCartImage from 'Assets/img/assets-for-demo/presentationViewSectionComponent/table.jpg'
+import shareButtonImage from 'Assets/img/assets-for-demo/presentationViewSectionComponent/share-btn.jpg'
+import cardImage from 'Assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card-with-btn.jpg'
+import twitterImage from 'Assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg'
+import iconsImage from 'Assets/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg'
+import repostImage from 'Assets/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg'
+import GridItem from 'Components/Grid/GridItem'
 
 class SectionComponents extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div>
         <div className={classes.container}>
@@ -44,8 +44,8 @@ class SectionComponents extends React.Component {
           </GridContainer>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(componentsStyle)(SectionComponents);
+export default withStyles(componentsStyle)(SectionComponents)

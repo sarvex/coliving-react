@@ -1,28 +1,28 @@
-import React from 'react';
+import React from 'react'
 // react components used to create a google map
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import Checkbox from '@material-ui/core/Checkbox';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+import withStyles from '@material-ui/core/styles/withStyles'
+import Checkbox from '@material-ui/core/Checkbox'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
 // @material-ui/icons
-import PinDrop from '@material-ui/icons/PinDrop';
-import Phone from '@material-ui/icons/Phone';
-import Check from '@material-ui/icons/Check';
+import PinDrop from '@material-ui/icons/PinDrop'
+import Phone from '@material-ui/icons/Phone'
+import Check from '@material-ui/icons/Check'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import InfoArea from 'components/InfoArea/InfoArea';
-import Card from 'components/Card/Card';
-import CardHeader from 'components/Card/CardHeader';
-import CardBody from 'components/Card/CardBody';
-import CardFooter from 'components/Card/CardFooter';
-import CustomInput from 'components/CustomInput/CustomInput';
-import Button from 'components/CustomButtons/Button';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import InfoArea from 'Components/InfoArea/InfoArea'
+import Card from 'Components/Card/Card'
+import CardHeader from 'Components/Card/CardHeader'
+import CardBody from 'Components/Card/CardBody'
+import CardFooter from 'Components/Card/CardFooter'
+import CustomInput from 'Components/CustomInput/CustomInput'
+import Button from 'Components/CustomButtons/Button'
 
-import contactsStyle from 'assets/jss/material-kit-pro-react/views/sectionsSections/contactsStyle';
+import contactsStyle from 'Assets/jss/material-kit-pro-react/views/sectionsSections/contactsStyle'
 
-import city from 'assets/img/examples/city.jpg';
+import city from 'Assets/img/examples/city.jpg'
 
 const RegularMap = withScriptjs(
   withGoogleMap((props) => (
@@ -87,35 +87,35 @@ const RegularMap = withScriptjs(
       }}>
       <Marker position={{ lat: 44.43353, lng: 26.093928 }} />
     </GoogleMap>
-  )),
-);
+  ))
+)
 
 class SectionContacts extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       checked: [],
-    };
+    }
   }
 
   handleToggle(value) {
-    const { checked } = this.state;
-    const currentIndex = checked.indexOf(value);
-    const newChecked = [...checked];
+    const { checked } = this.state
+    const currentIndex = checked.indexOf(value)
+    const newChecked = [...checked]
 
     if (currentIndex === -1) {
-      newChecked.push(value);
+      newChecked.push(value)
     } else {
-      newChecked.splice(currentIndex, 1);
+      newChecked.splice(currentIndex, 1)
     }
 
     this.setState({
       checked: newChecked,
-    });
+    })
   }
 
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes, ...rest } = this.props
     return (
       <div className='cd-section' {...rest}>
         {/* Contact us 1 START */}
@@ -343,8 +343,8 @@ class SectionContacts extends React.Component {
         </div>
         {/* Contact us 2 END */}
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(contactsStyle)(SectionContacts);
+export default withStyles(contactsStyle)(SectionContacts)

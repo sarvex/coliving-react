@@ -1,19 +1,19 @@
-import React from 'react';
+import React from 'react'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 
 // @material-ui/icons
 
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import CustomInput from 'components/CustomInput/CustomInput';
-import Button from 'components/CustomButtons/Button';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import CustomInput from 'Components/CustomInput/CustomInput'
+import Button from 'Components/CustomButtons/Button'
 
-import workStyle from 'assets/jss/material-kit-pro-react/views/landingPageSections/workStyle';
+import workStyle from 'Assets/jss/material-kit-pro-react/views/landingPageSections/workStyle'
 
 const SectionWork = (props) => {
-  const { classes } = this.props;
+  const { classes } = this.props
   return (
     <div className={classes.section}>
       <GridContainer justify='center'>
@@ -63,7 +63,7 @@ const SectionWork = (props) => {
         </GridItem>
       </GridContainer>
     </div>
-  );
-};
+  )
+}
 
-export default withStyles(workStyle)(SectionWork);
+export default withStyles(workStyle)(SectionWork)

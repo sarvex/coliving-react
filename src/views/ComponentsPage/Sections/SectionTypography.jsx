@@ -1,30 +1,30 @@
-import React from 'react';
+import React from 'react'
 
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 
 // @material-ui/icons
 
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Small from 'components/Typography/Small';
-import Danger from 'components/Typography/Danger';
-import Warning from 'components/Typography/Warning';
-import Success from 'components/Typography/Success';
-import Info from 'components/Typography/Info';
-import Primary from 'components/Typography/Primary';
-import Muted from 'components/Typography/Muted';
-import Quote from 'components/Typography/Quote';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Small from 'Components/Typography/Small'
+import Danger from 'Components/Typography/Danger'
+import Warning from 'Components/Typography/Warning'
+import Success from 'Components/Typography/Success'
+import Info from 'Components/Typography/Info'
+import Primary from 'Components/Typography/Primary'
+import Muted from 'Components/Typography/Muted'
+import Quote from 'Components/Typography/Quote'
 
-import typographyStyle from 'assets/jss/material-kit-pro-react/views/componentsSections/typographyStyle';
+import typographyStyle from 'Assets/jss/material-kit-pro-react/views/componentsSections/typographyStyle'
 
-import image from 'assets/img/faces/avatar.jpg';
-import SectionContentAreas from './SectionContentAreas';
+import image from 'Assets/img/faces/avatar.jpg'
+import SectionContentAreas from './SectionContentAreas'
 
 class SectionTypography extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={classes.section}>
         <div className={classes.container}>
@@ -178,8 +178,8 @@ class SectionTypography extends React.Component {
           <SectionContentAreas />
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(typographyStyle)(SectionTypography);
+export default withStyles(typographyStyle)(SectionTypography)

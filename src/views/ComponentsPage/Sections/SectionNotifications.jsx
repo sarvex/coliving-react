@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
-import Check from '@material-ui/icons/Check';
-import Warning from '@material-ui/icons/Warning';
+import Check from '@material-ui/icons/Check'
+import Warning from '@material-ui/icons/Warning'
 // core components
-import SnackbarContent from 'components/Snackbar/SnackbarContent';
-import Clearfix from 'components/Clearfix/Clearfix';
-import notificationsStyles from 'assets/jss/material-kit-pro-react/views/componentsSections/notificationsStyles';
+import SnackbarContent from 'Components/Snackbar/SnackbarContent'
+import Clearfix from 'Components/Clearfix/Clearfix'
+import notificationsStyles from 'Assets/jss/material-kit-pro-react/views/componentsSections/notificationsStyles'
 
 class SectionNotifications extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div className={`${classes.section} cd-section`} id='notifications'>
         <div className={classes.container}>
@@ -63,8 +63,8 @@ class SectionNotifications extends React.Component {
         />
         <Clearfix />
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(notificationsStyles)(SectionNotifications);
+export default withStyles(notificationsStyles)(SectionNotifications)

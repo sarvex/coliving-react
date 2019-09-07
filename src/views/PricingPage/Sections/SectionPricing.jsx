@@ -1,17 +1,17 @@
-import React from 'react';
-import classNames from 'classnames';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import NavPills from 'components/NavPills/NavPills';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import Button from 'components/CustomButtons/Button';
-import withStyles from '@material-ui/core/styles/withStyles';
+import React from 'react'
+import classNames from 'classnames'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import NavPills from 'Components/NavPills/NavPills'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import Button from 'Components/CustomButtons/Button'
+import withStyles from '@material-ui/core/styles/withStyles'
 
-import pricingStyle from 'assets/jss/material-kit-pro-react/views/pricingSections/pricingStyle';
+import pricingStyle from 'Assets/jss/material-kit-pro-react/views/pricingSections/pricingStyle'
 
 function SectionPricing(props) {
-  const { classes } = props;
+  const { classes } = props
 
   return (
     <div className={classes.pricingSection}>
@@ -115,7 +115,7 @@ function SectionPricing(props) {
         </GridItem>
       </GridContainer>
     </div>
-  );
+  )
 }
 
-export default withStyles(pricingStyle)(SectionPricing);
+export default withStyles(pricingStyle)(SectionPricing)

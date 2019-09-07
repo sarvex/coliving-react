@@ -1,47 +1,47 @@
-import React from 'react';
-import classNames from 'classnames';
-import withStyles from '@material-ui/core/styles/withStyles';
-import Tooltip from '@material-ui/core/Tooltip';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import Camera from '@material-ui/icons/Camera';
-import Palette from '@material-ui/icons/Palette';
-import People from '@material-ui/icons/People';
-import Add from '@material-ui/icons/Add';
-import Favorite from '@material-ui/icons/Favorite';
-import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import HeaderLinks from 'components/Header/HeaderLinks';
-import NavPills from 'components/NavPills/NavPills';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
-import CardHeader from 'components/Card/CardHeader';
-import Badge from 'components/Badge/Badge';
-import Muted from 'components/Typography/Muted';
-import Parallax from 'components/Parallax/Parallax';
-import Clearfix from 'components/Clearfix/Clearfix';
-import Button from 'components/CustomButtons/Button';
+import React from 'react'
+import classNames from 'classnames'
+import withStyles from '@material-ui/core/styles/withStyles'
+import Tooltip from '@material-ui/core/Tooltip'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import Camera from '@material-ui/icons/Camera'
+import Palette from '@material-ui/icons/Palette'
+import People from '@material-ui/icons/People'
+import Add from '@material-ui/icons/Add'
+import Favorite from '@material-ui/icons/Favorite'
+import Header from 'Components/Header/Header'
+import Footer from 'Components/Footer/Footer'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import NavPills from 'Components/NavPills/NavPills'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
+import CardHeader from 'Components/Card/CardHeader'
+import Badge from 'Components/Badge/Badge'
+import Muted from 'Components/Typography/Muted'
+import Parallax from 'Components/Parallax/Parallax'
+import Clearfix from 'Components/Clearfix/Clearfix'
+import Button from 'Components/CustomButtons/Button'
 
-import christian from 'assets/img/faces/christian.jpg';
-import oluEletu from 'assets/img/examples/olu-eletu.jpg';
-import clemOnojeghuo from 'assets/img/examples/clem-onojeghuo.jpg';
-import cynthiaDelRio from 'assets/img/examples/cynthia-del-rio.jpg';
-import mariyaGeorgieva from 'assets/img/examples/mariya-georgieva.jpg';
-import clemOnojegaw from 'assets/img/examples/clem-onojegaw.jpg';
-import darrenColeshill from 'assets/img/examples/darren-coleshill.jpg';
-import avatar from 'assets/img/faces/avatar.jpg';
-import marc from 'assets/img/faces/marc.jpg';
-import kendall from 'assets/img/faces/kendall.jpg';
-import cardProfile2Square from 'assets/img/faces/card-profile2-square.jpg';
+import christian from 'Assets/img/faces/christian.jpg'
+import oluEletu from 'Assets/img/examples/olu-eletu.jpg'
+import clemOnojeghuo from 'Assets/img/examples/clem-onojeghuo.jpg'
+import cynthiaDelRio from 'Assets/img/examples/cynthia-del-rio.jpg'
+import mariyaGeorgieva from 'Assets/img/examples/mariya-georgieva.jpg'
+import clemOnojegaw from 'Assets/img/examples/clem-onojegaw.jpg'
+import darrenColeshill from 'Assets/img/examples/darren-coleshill.jpg'
+import avatar from 'Assets/img/faces/avatar.jpg'
+import marc from 'Assets/img/faces/marc.jpg'
+import kendall from 'Assets/img/faces/kendall.jpg'
+import cardProfile2Square from 'Assets/img/faces/card-profile2-square.jpg'
 
-import profilePageStyle from 'assets/jss/material-kit-pro-react/views/profilePageStyle';
+import profilePageStyle from 'Assets/jss/material-kit-pro-react/views/profilePageStyle'
 
 const Profile = (props) => {
-  const { classes, ...rest } = props;
-  const imageClasses = classNames(classes.imgRaised, classes.imgRoundedCircle, classes.imgFluid);
-  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+  const { classes, ...rest } = props
+  const imageClasses = classNames(classes.imgRaised, classes.imgRoundedCircle, classes.imgFluid)
+  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery)
   return (
     <div>
       <Header
@@ -55,7 +55,7 @@ const Profile = (props) => {
         }}
         {...rest}
       />
-      <Parallax image={require('assets/img/examples/city.jpg')} filter='dark' className={classes.parallax} />
+      <Parallax image={require('Assets/img/examples/city.jpg')} filter='dark' className={classes.parallax} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <GridContainer justify='center'>
@@ -405,7 +405,7 @@ const Profile = (props) => {
         }
       />
     </div>
-  );
-};
+  )
+}
 
-export default withStyles(profilePageStyle)(Profile);
+export default withStyles(profilePageStyle)(Profile)

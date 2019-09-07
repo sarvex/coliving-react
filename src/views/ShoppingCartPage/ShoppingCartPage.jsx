@@ -1,38 +1,38 @@
-import React from 'react';
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from 'classnames'
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import Tooltip from '@material-ui/core/Tooltip';
+import withStyles from '@material-ui/core/styles/withStyles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import Tooltip from '@material-ui/core/Tooltip'
 // @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite';
-import Close from '@material-ui/icons/Close';
-import Remove from '@material-ui/icons/Remove';
-import Add from '@material-ui/icons/Add';
-import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import Favorite from '@material-ui/icons/Favorite'
+import Close from '@material-ui/icons/Close'
+import Remove from '@material-ui/icons/Remove'
+import Add from '@material-ui/icons/Add'
+import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight'
 // core components
-import Header from 'components/Header/Header';
-import HeaderLinks from 'components/Header/HeaderLinks';
-import Parallax from 'components/Parallax/Parallax';
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Footer from 'components/Footer/Footer';
-import Table from 'components/Table/Table';
-import Button from 'components/CustomButtons/Button';
-import Card from 'components/Card/Card';
-import CardBody from 'components/Card/CardBody';
+import Header from 'Components/Header/Header'
+import HeaderLinks from 'Components/Header/HeaderLinks'
+import Parallax from 'Components/Parallax/Parallax'
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Footer from 'Components/Footer/Footer'
+import Table from 'Components/Table/Table'
+import Button from 'Components/CustomButtons/Button'
+import Card from 'Components/Card/Card'
+import CardBody from 'Components/Card/CardBody'
 
-import shoppingCartStyle from 'assets/jss/material-kit-pro-react/views/shoppingCartStyle';
+import shoppingCartStyle from 'Assets/jss/material-kit-pro-react/views/shoppingCartStyle'
 
-import product1 from 'assets/img/product1.jpg';
-import product2 from 'assets/img/product2.jpg';
-import product3 from 'assets/img/product3.jpg';
+import product1 from 'Assets/img/product1.jpg'
+import product2 from 'Assets/img/product2.jpg'
+import product3 from 'Assets/img/product3.jpg'
 
 class ShoppingCartPage extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes } = this.props
     return (
       <div>
         <Header
@@ -46,7 +46,7 @@ class ShoppingCartPage extends React.Component {
           }}
         />
 
-        <Parallax image={require('assets/img/examples/bg2.jpg')} filter='dark' small>
+        <Parallax image={require('Assets/img/examples/bg2.jpg')} filter='dark' small>
           <div className={classes.container}>
             <GridContainer>
               <GridItem md={8} sm={8} className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}>
@@ -248,8 +248,8 @@ class ShoppingCartPage extends React.Component {
           }
         />
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(shoppingCartStyle)(ShoppingCartPage);
+export default withStyles(shoppingCartStyle)(ShoppingCartPage)

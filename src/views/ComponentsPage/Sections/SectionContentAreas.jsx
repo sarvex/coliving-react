@@ -1,63 +1,63 @@
-import React from 'react';
+import React from 'react'
 
 // @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-import Checkbox from '@material-ui/core/Checkbox';
-import Tooltip from '@material-ui/core/Tooltip';
+import withStyles from '@material-ui/core/styles/withStyles'
+import Checkbox from '@material-ui/core/Checkbox'
+import Tooltip from '@material-ui/core/Tooltip'
 // @material-ui/core icons
-import Person from '@material-ui/icons/Person';
-import Edit from '@material-ui/icons/Edit';
-import Close from '@material-ui/icons/Close';
-import Check from '@material-ui/icons/Check';
-import Remove from '@material-ui/icons/Remove';
-import Add from '@material-ui/icons/Add';
-import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import Reply from '@material-ui/icons/Reply';
-import Favorite from '@material-ui/icons/Favorite';
+import Person from '@material-ui/icons/Person'
+import Edit from '@material-ui/icons/Edit'
+import Close from '@material-ui/icons/Close'
+import Check from '@material-ui/icons/Check'
+import Remove from '@material-ui/icons/Remove'
+import Add from '@material-ui/icons/Add'
+import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight'
+import Reply from '@material-ui/icons/Reply'
+import Favorite from '@material-ui/icons/Favorite'
 // core components
-import GridContainer from 'components/Grid/GridContainer';
-import GridItem from 'components/Grid/GridItem';
-import Table from 'components/Table/Table';
-import Button from 'components/CustomButtons/Button';
-import Media from 'components/Media/Media';
-import CustomInput from 'components/CustomInput/CustomInput';
-import Paginations from 'components/Pagination/Pagination';
+import GridContainer from 'Components/Grid/GridContainer'
+import GridItem from 'Components/Grid/GridItem'
+import Table from 'Components/Table/Table'
+import Button from 'Components/CustomButtons/Button'
+import Media from 'Components/Media/Media'
+import CustomInput from 'Components/CustomInput/CustomInput'
+import Paginations from 'Components/Pagination/Pagination'
 
-import style from 'assets/jss/material-kit-pro-react/views/componentsSections/contentAreas';
+import style from 'Assets/jss/material-kit-pro-react/views/componentsSections/contentAreas'
 
-import avatar from 'assets/img/faces/avatar.jpg';
-import kendall from 'assets/img/faces/kendall.jpg';
-import marc from 'assets/img/faces/marc.jpg';
-import placeholder from 'assets/img/placeholder.jpg';
-import product1 from 'assets/img/product1.jpg';
-import product2 from 'assets/img/product2.jpg';
-import product3 from 'assets/img/product3.jpg';
+import avatar from 'Assets/img/faces/avatar.jpg'
+import kendall from 'Assets/img/faces/kendall.jpg'
+import marc from 'Assets/img/faces/marc.jpg'
+import placeholder from 'Assets/img/placeholder.jpg'
+import product1 from 'Assets/img/product1.jpg'
+import product2 from 'Assets/img/product2.jpg'
+import product3 from 'Assets/img/product3.jpg'
 
 class SectionContentAreas extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       checked: [1, 3, 5],
-    };
-    this.handleToggle = this.handleToggle.bind(this);
+    }
+    this.handleToggle = this.handleToggle.bind(this)
   }
 
   handleToggle(value) {
-    const { checked } = this.state;
-    const currentIndex = checked.indexOf(value);
-    const newChecked = [...checked];
+    const { checked } = this.state
+    const currentIndex = checked.indexOf(value)
+    const newChecked = [...checked]
     if (currentIndex === -1) {
-      newChecked.push(value);
+      newChecked.push(value)
     } else {
-      newChecked.splice(currentIndex, 1);
+      newChecked.splice(currentIndex, 1)
     }
     this.setState({
       checked: newChecked,
-    });
+    })
   }
 
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes, ...rest } = this.props
     const fillButtons = [
       { color: 'info', icon: Person },
       { color: 'success', icon: Edit },
@@ -67,8 +67,8 @@ class SectionContentAreas extends React.Component {
         <Button justIcon size='sm' color={prop.color} key={key}>
           <prop.icon />
         </Button>
-      );
-    });
+      )
+    })
     const simpleButtons = [
       { color: 'info', icon: Person },
       { color: 'success', icon: Edit },
@@ -78,8 +78,8 @@ class SectionContentAreas extends React.Component {
         <Button simple justIcon size='sm' color={prop.color} key={key}>
           <prop.icon />
         </Button>
-      );
-    });
+      )
+    })
     const roundButtons = [
       { color: 'info', icon: Person },
       { color: 'success', icon: Edit },
@@ -89,8 +89,8 @@ class SectionContentAreas extends React.Component {
         <Button round justIcon size='sm' color={prop.color} key={key}>
           <prop.icon />
         </Button>
-      );
-    });
+      )
+    })
     return (
       <div {...rest} className='cd-section' id='contentAreas'>
         <h2>Content Areas</h2>
@@ -678,8 +678,8 @@ class SectionContentAreas extends React.Component {
           </GridContainer>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(style)(SectionContentAreas);
+export default withStyles(style)(SectionContentAreas)
