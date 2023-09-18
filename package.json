@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@mui/material": "5.14.9",
+    "@mui/material": "5.14.10",
     "@mui/icons-material": "5.14.9",
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
@@ -37,8 +37,8 @@
   },
   "devDependencies": {
     "@babel/cli": "7.22.15",
-    "@babel/core": "7.22.19",
-    "@babel/preset-env": "7.22.15",
+    "@babel/core": "7.22.20",
+    "@babel/preset-env": "7.22.20",
     "@babel/preset-react": "7.22.15",
     "babel-plugin-module-resolver": "5.0.0",
     "eslint": "8.49.0",
