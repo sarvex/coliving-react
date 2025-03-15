@@ -9,8 +9,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@mui/material": "5.16.14",
-    "@mui/icons-material": "5.16.14",
+    "@mui/material": "6.4.7",
+    "@mui/icons-material": "6.4.7",
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
     "ajv": "8.17.1",
